@@ -1,0 +1,545 @@
+{
+  "header": {
+    "navigation": {
+      "tours": "Tours",
+      "gastronomicExperiences": "Experiencias Gastronómicas",
+      "ourJourney": "Nuestro viaje",
+      "contact": "Contacto"
+    },
+    "language": {
+      "english": "Inglés",
+      "spanish": "Español"
+    },
+    "cart": "Carrito",
+    "menu": "Menú",
+    "logoAlt": "Logo de Touramex"
+  },
+  "hero": {
+    "backgroundAlt": "Fondo de viaje",
+    "badge": "Experiencias únicas en México",
+    "title": {
+      "first": "Descubre México",
+      "highlight": "más allá",
+      "last": "del viaje"
+    },
+    "description": "Tours, gastronomía y experiencias diseñadas para viajeros que buscan algo auténtico, cómodo y memorable.",
+    "destination": {
+      "label": "Destino",
+      "loading": "Cargando destinos...",
+      "placeholder": "Selecciona un destino"
+    },
+    "travelers": {
+      "label": "Viajeros",
+      "options": {
+        "one": "1 Adulto",
+        "two": "2 Adultos",
+        "three": "3 Adultos",
+        "four": "4 Adultos",
+        "fivePlus": "5+ Adultos"
+      }
+    },
+    "date": "Fecha",
+    "search": "Buscar"
+  },
+  "about": {
+    "badge": "Conócenos",
+    "title": {
+      "first": "Vive experiencias que realmente",
+      "highlight": "valen la pena"
+    },
+    "description": "En Touramex diseñamos experiencias auténticas, cómodas y memorables. Nos enfocamos en atención personalizada, logística cuidada y actividades que realmente conecten contigo y con el destino.",
+    "cta": "Agenda ahora",
+    "imageAlt": "Experiencia de viaje",
+    "card": {
+      "subtitle": "Experiencias memorables",
+      "title": "Descubre México con Touramex"
+    }
+  },
+  "cart": {
+    "hero": {
+      "badge": "Checkout seguro",
+      "title": "Finaliza tu compra sin perder el ritmo.",
+      "description": "Revisa tus servicios, aplica tu cupón y completa tus datos de pago. El cobro se procesa dentro del carrito y después enviamos la confirmación por correo.",
+      "badges": {
+        "safePayment": "Pago seguro",
+        "emailConfirmation": "Confirmación por correo",
+        "personalizedAttention": "Atención personalizada"
+      }
+    },
+    "success": {
+      "badge": "Pago aprobado",
+      "title": "Tu compra fue procesada correctamente.",
+      "description": "Revisa tu correo para la confirmación de compra y los detalles de tu pedido. Si necesitas algo más, nuestro equipo puede ayudarte.",
+      "continueExploring": "Seguir explorando",
+      "backHome": "Volver al inicio"
+    },
+    "cartHeader": {
+      "title": "Tu carrito",
+      "count": "{itemCount} {serviceWord} en {productCount} {productWord}",
+      "serviceSingular": "servicio",
+      "servicePlural": "servicios",
+      "productSingular": "producto",
+      "productPlural": "productos"
+    },
+    "empty": {
+      "title": "No tienes servicios en el carrito",
+      "description": "Agrega servicios para continuar con tu compra.",
+      "cta": "Ver servicios"
+    },
+    "item": {
+      "adults": "Adultos: {quantity}",
+      "removeAria": "Eliminar servicio",
+      "quantityLabel": "Cantidad de adultos",
+      "subtotal": "Subtotal"
+    },
+    "checkout": {
+      "title": "Datos del cliente y pago",
+      "description": "Completa la información para procesar tu compra."
+    },
+    "form": {
+      "defaults": {
+        "country": "México"
+      },
+      "labels": {
+        "firstName": "Nombre *",
+        "lastName": "Apellidos *",
+        "email": "Email *",
+        "phone": "Teléfono *",
+        "city": "Ciudad *",
+        "state": "Estado *",
+        "street": "Calle *",
+        "number": "Número *",
+        "neighborhood": "Colonia *",
+        "postalCode": "Código postal *",
+        "country": "País *"
+      },
+      "placeholders": {
+        "firstName": "Nombre",
+        "lastName": "Apellidos",
+        "email": "correo@ejemplo.com",
+        "phone": "55 1234 5678",
+        "city": "Ciudad",
+        "state": "Estado",
+        "street": "Calle",
+        "number": "Número exterior / interior",
+        "neighborhood": "Colonia",
+        "postalCode": "00000",
+        "country": "México"
+      }
+    },
+    "payment": {
+      "title": "Datos de tarjeta",
+      "labels": {
+        "cardNumber": "Número de tarjeta *",
+        "cardName": "Nombre como aparece en la tarjeta *",
+        "month": "Mes *",
+        "year": "Año *",
+        "cvv": "CVV *"
+      },
+      "placeholders": {
+        "cardNumber": "1234 5678 9012 3456",
+        "cardName": "NOMBRE APELLIDO",
+        "month": "MM",
+        "year": "YYYY",
+        "cvv": "123"
+      },
+      "note": "Los datos se envían al servidor para procesar el pago con Etomin.",
+      "processing": "Procesando pago...",
+      "submit": "Pagar ahora"
+    },
+    "summary": {
+      "title": "Resumen",
+      "subtotal": "Subtotal",
+      "coupon": "Cupón",
+      "noCoupon": "Sin aplicar",
+      "couponApplied": "{code} ({discount}%)",
+      "discount": "Descuento",
+      "vat": "IVA (16%)",
+      "total": "Total"
+    },
+    "coupon": {
+      "title": "Cupón de descuento",
+      "placeholder": "Ingresa tu cupón",
+      "apply": "Aplicar",
+      "messages": {
+        "empty": "Ingresa un cupón.",
+        "invalid": "Cupón no válido.",
+        "applied": "Cupón aplicado correctamente. Descuento del {discount}%."
+      }
+    },
+    "info": {
+      "emailConfirmation": "Se enviará confirmación por correo.",
+      "processedInFlow": "Pago procesado en este mismo flujo.",
+      "noRedirects": "Sin redirecciones innecesarias."
+    },
+    "alerts": {
+      "couponEmptyTitle": "Cupón vacío",
+      "couponEmptyMessage": "Ingresa un código de cupón para aplicarlo.",
+      "couponInvalidTitle": "Cupón no válido",
+      "couponInvalidMessage": "El código ingresado no coincide con ningún cupón activo.",
+      "couponAppliedTitle": "Cupón aplicado",
+      "couponAppliedMessage": "Se aplicó {discount}% de descuento al carrito.",
+      "cartEmptyTitle": "Carrito vacío",
+      "cartEmptyMessage": "Agrega al menos un servicio.",
+      "invalidTotalTitle": "Total inválido",
+      "invalidTotalMessage": "El total del carrito no es válido.",
+      "paymentApprovedTitle": "Pago aprobado",
+      "paymentApprovedWithWarningMessage": "{warning} Revisa la consola o valida el pedido más tarde.",
+      "paymentSuccessTitle": "Pago exitoso",
+      "paymentSuccessMessage": "Tu compra fue procesada correctamente y los correos fueron enviados.",
+      "paymentErrorTitle": "Error al procesar pago",
+      "emailIssueFallback": "El pago se procesó, pero hubo un problema al enviar los correos."
+    },
+    "errors": {
+      "paymentRejected": "El pago fue rechazado.",
+      "unexpected": "Ocurrió un error inesperado."
+    }
+  },
+  "Features": {
+    "badge": "¿Por qué elegir Touramex?",
+    "title": {
+      "line1": "Lo que nos hace",
+      "line2": "diferentes"
+    },
+    "features": {
+      "guides": {
+        "title": "Los mejores guías",
+        "description": "Contamos con guías nativos y varios años de experiencia para brindarte la mejor asistencia durante tu tour."
+      },
+      "unique": {
+        "title": "Experiencias únicas",
+        "description": "Contamos con experiencias únicas en nuestro catálogo en los mejores destinos del país."
+      },
+      "prices": {
+        "title": "Precios amigables",
+        "description": "Contamos con los mejores precios del mercado y garantizamos la satisfacción de nuestros clientes."
+      }
+    },
+    "images": {
+      "guidesAlt": "Guías de tour",
+      "boatAlt": "Experiencia en lancha"
+    }
+  },
+  "Experiences": {
+    "loading": {
+      "title": "Cargando experiencias...",
+      "description": "Estamos preparando las mejores aventuras para ti."
+    },
+    "title": {
+      "line1": "Conoce nuestras",
+      "highlight": "últimas aventuras"
+    },
+    "viewAll": "Ver todos",
+    "card": {
+      "badge": "Experiencia",
+      "defaultDestination": "México",
+      "explore": "Explorar experiencia"
+    }
+  },
+  "Destinations": {
+    "loading": {
+      "title": "Loading destinations...",
+      "description": "We are preparing the best places for your next adventure."
+    },
+    "badge": "Featured destinations",
+    "title": {
+      "line1": "Discover",
+      "highlight": "incredible places"
+    },
+    "description": "Explore the main destinations where our experiences come to life.",
+    "card": {
+      "label": "Destination",
+      "explore": "Explore"
+    }
+  },
+  "CustomTour": {
+    "title": {
+      "line1": "Tour Personalizado",
+      "highlight": "en México"
+    },
+    "badge": "Precio variable según experiencia",
+    "description": {
+      "paragraph1": "Diseña un recorrido a tu medida, seleccionando los destinos, experiencias y actividades que más te interesen.",
+      "paragraph2": "Combina libremente opciones como: visitas culturales, tours gastronómicos, excursiones de aventura, experiencias en pueblos mágicos o escapadas de playa.",
+      "paragraph3": "Flexibilidad total en duración, número de personas, transporte y servicios adicionales como guía privado, traslados especiales y hospedaje.",
+      "paragraph4": "La opción perfecta para viajeros que buscan vivir México a su manera, con un itinerario diseñado especialmente para ellos."
+    },
+    "buttons": {
+      "quote": "Cotiza ahora",
+      "pay": "Pagar tour"
+    },
+    "floatingCard": {
+      "label": "Experiencia diseñada para ti",
+      "title": "Viaja sin límites"
+    },
+    "imageAlt": "Tour personalizado en México"
+  },
+  "Differentiators": {
+    "badge": "Lo que nos hace diferentes",
+    "title": {
+      "line1": "Las claves que nos",
+      "highlight": "diferencian del resto"
+    },
+    "items": {
+      "planning": {
+        "title": "Planeación",
+        "description": "Nos encargamos de contar con mejores tiempos y actividades en todas nuestras experiencias"
+      },
+      "support": {
+        "title": "Atención",
+        "description": "Te asesoramos desde el primer momento hasta que vuelvas a casa"
+      },
+      "variety": {
+        "title": "Variedad",
+        "description": "Tenemos experiencias en lugares para todos los gustos"
+      },
+      "satisfaction": {
+        "title": "Satisfacción",
+        "description": "Nuestra experiencia nos respalda por lo que podemos garantizar tu satisfacción"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "subtitle": "Experiencias únicas en México",
+      "description": "Creamos experiencias auténticas y memorables para viajeros que quieren descubrir México de una forma diferente, segura y personalizada."
+    },
+    "badges": {
+      "securePayments": "Pagos seguros",
+      "personalizedAttention": "Atención personalizada"
+    },
+    "contact": {
+      "title": "Contacto",
+      "location": "Ubicación",
+      "address": "AVENIDA INSURGENTES SUR N°730, PISO 1, OFICINA 234, COLONIA DEL VALLE CENTRO, ALCALDÍA BENITO JUÁREZ, C.P. 03100, CIUDAD DE MÉXICO.",
+      "email": "Email",
+      "phone": "Teléfono"
+    },
+    "legal": {
+      "title": "Información legal",
+      "privacy": "Política de privacidad",
+      "terms": "Términos y condiciones",
+      "refunds": "Política de devoluciones y reembolsos"
+    },
+    "copyright": "Copyright © 2026. Todos los derechos reservados.",
+    "designed": "Diseñado para experiencias memorables."
+  },
+  "categoryPage": {
+    "loading": "Cargando experiencias...",
+    "hero": {
+      "badge": "Experiencias exclusivas",
+      "available": "Experiencias disponibles",
+      "destination": "Destino"
+    },
+    "toolbar": {
+      "results": "Resultados encontrados",
+      "experiences": "experiencias"
+    },
+    "sort": {
+      "default": "Ordenar por",
+      "priceAsc": "Precio: menor a mayor",
+      "priceDesc": "Precio: mayor a menor",
+      "newest": "Más recientes",
+      "oldest": "Más antiguos",
+      "name": "Nombre"
+    },
+    "price": {
+      "from": "Desde",
+      "tax": "MXN (IVA Incluido)"
+    },
+    "buttons": {
+      "view": "Ver experiencia"
+    },
+    "empty": {
+      "title": "Próximamente",
+      "description": "Estamos preparando nuevas experiencias increíbles para esta categoría."
+    },
+    "notFound": {
+      "title": "Categoría no encontrada",
+      "description": "Parece que esta experiencia ya no está disponible o la categoría fue movida.",
+      "button": "Explorar tours"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Estamos listos para ayudarte",
+      "title": "Hablemos de tu",
+      "titleHighlight": "próxima experiencia",
+      "description": "Cuéntanos qué tipo de viaje estás buscando y nuestro equipo te ayudará a crear una experiencia personalizada en México.",
+      "imageAlt": "Contacto"
+    },
+    "info": {
+      "badge": "Contacto",
+      "title": "Estamos aquí para ayudarte",
+      "description": "Resolvemos dudas, cotizaciones, tours privados y experiencias personalizadas."
+    },
+    "cards": {
+      "address": {
+        "title": "Dirección",
+        "description": "AVENIDA INSURGENTES SUR N°730, PISO 1, OFICINA 234, COLONIA DEL VALLE CENTRO, ALCALDÍA BENITO JUÁREZ, C.P. 03100, CIUDAD DE MÉXICO."
+      },
+      "email": {
+        "title": "Email"
+      },
+      "phone": {
+        "title": "Teléfono"
+      }
+    },
+    "form": {
+      "badge": "Formulario",
+      "title": "¿Quieres que te contactemos?",
+      "description": "Compártenos tus datos y nuestro equipo se pondrá en contacto contigo lo antes posible.",
+      "submit": "Enviar mensaje",
+      "loading": "Enviando...",
+      "subjectDefault": "Contacto general",
+      "fields": {
+        "name": {
+          "label": "Nombre",
+          "placeholder": "Tu nombre"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "correo@email.com"
+        },
+        "phone": {
+          "label": "Teléfono",
+          "placeholder": "+52 55..."
+        },
+        "message": {
+          "label": "Mensaje",
+          "placeholder": "Cuéntanos más detalles sobre el viaje que deseas..."
+        }
+      }
+    },
+    "success": {
+      "title": "¡Mensaje enviado!",
+      "description": "Nos pondremos en contacto contigo muy pronto.",
+      "button": "Enviar otro mensaje"
+    }
+  },
+  "customQuote": {
+    "hero": {
+      "badge": "Experiencia exclusiva",
+      "title": "Tour personalizado",
+      "description": "Ingresa el folio de cotización y el monto proporcionado por nuestro equipo para añadir tu experiencia al carrito.",
+      "imageAlt": "Tour personalizado"
+    },
+    "content": {
+      "badge": "Reserva personalizada",
+      "title": "Completa tu experiencia",
+      "description": "Agrega los datos de tu cotización y continúa con el proceso de reserva."
+    },
+    "form": {
+      "quoteId": "Folio de cotización",
+      "quotePlaceholder": "Ej. GB-2026-001",
+      "amount": "Monto a pagar",
+      "people": "Personas",
+      "quantity": "Cantidad"
+    },
+    "total": {
+      "label": "Total estimado"
+    },
+    "cta": "Añadir al carrito",
+    "footer": "Tu cotización será validada por nuestro equipo al finalizar la compra.",
+    "alerts": {
+      "quoteRequired": "Ingresa el folio de cotización",
+      "invalidAmount": "Ingresa un monto válido"
+    },
+    "cart": {
+      "title": "Tour personalizado",
+      "titleEnglish": "Custom tour",
+      "quoteLabel": "Folio de cotización",
+      "destination": "Personalizado",
+      "duration": "Personalizado"
+    }
+  },
+  "OurTravel": {
+    "hero": {
+      "badge": "Nuestra historia",
+      "title": "Creamos experiencias que conectan personas con la esencia de México",
+      "description": "Viajar no es solamente trasladarse. Es descubrir, sentir y construir recuerdos que permanecen toda la vida.",
+      "imageAlt": "Escalador en la montaña"
+    },
+    "mission": {
+      "title": "Nuestra misión",
+      "paragraphs": [
+        "Nuestro compromiso es conectar a las personas con la riqueza cultural, histórica y natural de México. Desde tours guiados por ciudades coloniales, recorridos por zonas arqueológicas, actividades de aventura en playas y montañas, hasta experiencias gastronómicas únicas, ponemos a tu alcance un catálogo variado que se adapta a diferentes gustos, tiempos y presupuestos.",
+        "Con un equipo experto en turismo y servicio al cliente, garantizamos procesos de reservación fáciles, asistencia personalizada y la certeza de que cada experiencia está cuidadosamente seleccionada para ofrecerte calidad, seguridad y satisfacción.",
+        "Creemos que viajar es más que trasladarse: es descubrir, sentir y crear recuerdos inolvidables. Por eso, trabajamos cada día para ser el puente entre tu curiosidad por explorar México y las experiencias que harán de tu viaje algo único.",
+        "Somos especialistas en mostrar lo mejor de México a través de experiencias únicas y auténticas. Nos dedicamos exclusivamente a ofrecer tours y actividades dentro de México, acercando a viajeros nacionales e internacionales a la riqueza cultural, natural y gastronómica que hace de nuestro país un destino inigualable.",
+        "Nuestro objetivo es que cada viajero viva México de forma cercana y segura, con la tranquilidad de contar con reservaciones fáciles, precios claros y un servicio confiable. Desde recorridos por las maravillas arqueológicas y pueblos mágicos, hasta aventuras en playas, montañas y selvas, diseñamos experiencias que se adaptan a diferentes estilos de viaje.",
+        "Con un equipo comprometido y una red de guías locales certificados, trabajamos día a día para garantizar la calidad de cada tour y la satisfacción de quienes confían en nosotros. Creemos que viajar por México es descubrir su esencia, su historia y su gente. Por eso, ponemos en tus manos el acceso a un catálogo de actividades que harán de tu visita un recuerdo inolvidable."
+      ]
+    },
+    "sideCard": {
+      "badge": "Explora México",
+      "title": "Descubrir México es vivirlo",
+      "description": "Cada experiencia está diseñada para acercarte a la historia, cultura, naturaleza y esencia auténtica del país.",
+      "imageAlt": "Escalador en montaña"
+    }
+  },
+  "toursPage": {
+    "hero": {
+      "badge": "Experiencias auténticas por México",
+      "title": "Descubre tours diseñados para vivir México de verdad.",
+      "description": "Explora experiencias únicas, selecciona tu destino ideal y reserva en minutos con un proceso simple y moderno."
+    },
+    "sidebar": {
+      "title": "Filtros",
+      "subtitle": "Personaliza tu búsqueda",
+      "destination": "Destino",
+      "allDestinations": "Todos los destinos",
+      "adults": "Adultos",
+      "viewAvailability": "Ver disponibilidad"
+    },
+    "results": {
+      "badge": "Experiencias disponibles",
+      "title": "{count} tours encontrados"
+    },
+    "sort": {
+      "default": "Ordenar por",
+      "priceAsc": "Precio: menor a mayor",
+      "priceDesc": "Precio: mayor a menor",
+      "newestDesc": "Más recientes primero",
+      "newestAsc": "Más antiguos primero",
+      "name": "Nombre"
+    },
+    "states": {
+      "loading": "Cargando tours...",
+      "error": "Ocurrió un error al cargar los tours."
+    },
+    "price": {
+      "from": "Desde",
+      "vatIncluded": "IVA Incluido"
+    },
+    "buttons": {
+      "add": "Agregar",
+      "details": "Detalles"
+    },
+    "pagination": {
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "pageOf": "Página {current} de {total}"
+    }
+  },
+  "tourDetail": {
+    "notFoundTitle": "Tour no encontrado",
+    "notFoundDescription": "El tour que buscas no existe o fue eliminado.",
+    "backToTours": "Volver a tours",
+    "heroDescription": "Vive una experiencia premium diseñada para descubrir destinos increíbles con comodidad, aventura y atención personalizada.",
+    "information": "Información",
+    "descriptionTitle": "Descripción del tour",
+    "from": "Desde",
+    "taxIncluded": "IVA Incluido",
+    "perPerson": "por persona",
+    "tourDate": "Fecha del tour",
+    "numberOfAdults": "Número de adultos",
+    "adults": "Adultos",
+    "total": "Total",
+    "addToCart": "Agregar al carrito",
+    "reserveNow": "Reserva ahora y paga después",
+    "relatedSubtitle": "También te puede interesar",
+    "relatedTitle": "Tours relacionados",
+    "viewDetails": "Ver detalles"
+  }
+}
