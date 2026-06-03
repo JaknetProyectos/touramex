@@ -49,6 +49,16 @@ export default function TourDetailPage() {
   const relatedTours = useMemo(() => {
     if (!tour) return [];
 
+    console.log(tour)
+
+    if (tour.destination === "CDMX" || tour.destination === "experiencias-gastronomicas") {
+      return tours.filter(item =>
+        item.id !== tour.id &&
+        item.destination === tour.destination &&
+        (item.destination === "CDMX" || item.destination === "experiencias-gastronomicas")
+      ).slice(0, 3)
+    }
+
     return tours
       .filter(
         (item) =>
@@ -118,7 +128,7 @@ export default function TourDetailPage() {
   const tourDescription =
     locale === "en"
       ? tour.description_english ||
-        tour.description
+      tour.description
       : tour.description;
 
   return (
@@ -379,13 +389,13 @@ export default function TourDetailPage() {
                 const relatedTitle =
                   locale === "en"
                     ? relatedTour.title_english ||
-                      relatedTour.title
+                    relatedTour.title
                     : relatedTour.title;
 
                 const relatedDescription =
                   locale === "en"
                     ? relatedTour.description_english ||
-                      relatedTour.description
+                    relatedTour.description
                     : relatedTour.description;
 
                 return (
