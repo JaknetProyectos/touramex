@@ -32,6 +32,7 @@ import {
 } from "lucide-react";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const COUPONS = [
   { code: "TOURA10", discount: 10 },
@@ -86,7 +87,7 @@ const iconInputClass =
   "w-full rounded-2xl border border-white/70 bg-white py-3 pl-11 pr-4 outline-none transition-colors placeholder:text-gray-400 focus:border-[#7c3aed] focus:ring-4 focus:ring-[#7c3aed]/10";
 
 function sanitizeCardNumber(value: string) {
-  return value.replace(/\D/g, "").slice(0, 16);
+  return value;
 }
 
 function buildOrderId() {
@@ -98,8 +99,8 @@ function buildOrderId() {
 }
 
 function formatCardDisplay(value: string) {
-  const digits = sanitizeCardNumber(value);
-  return digits.replace(/(.{4})/g, "$1 ").trim();
+  const digits = value;
+  return digits;
 }
 
 function CartSkeleton() {
@@ -203,7 +204,7 @@ export default function CartPage() {
   const discountAmount = coupon ? (subtotal * coupon.discount) / 100 : 0;
   const subtotalAfterDiscount = Math.max(0, subtotal - discountAmount);
   const vatAmount = subtotalAfterDiscount * 0.16;
-  const total = Math.max(0, subtotalAfterDiscount + vatAmount);
+  const total = Math.max(0, subtotalAfterDiscount);
 
   const fullAddress = [form.calle.trim(), form.numero.trim(), form.colonia.trim()]
     .filter(Boolean)
@@ -291,7 +292,7 @@ export default function CartPage() {
           country: form.country.trim(),
         },
         cardData: {
-          number: form.cardNumber.replace(/\s/g, ""),
+          number: form.cardNumber.trim(),
           name: form.cardName.trim(),
           month: form.expMonth.trim(),
           year: form.expYear.trim(),
@@ -864,7 +865,7 @@ export default function CartPage() {
                             minLength={13}
                             maxLength={19}
                             inputMode="numeric"
-                            value={formatCardDisplay(form.cardNumber)}
+                            value={form.cardNumber}
                             onChange={(e) =>
                               setForm({
                                 ...form,
@@ -991,6 +992,21 @@ export default function CartPage() {
                         </>
                       )}
                     </button>
+
+                    <div className="flex flex-row items-center justify-between gap-6 p-6">
+                      <Image
+                        src="/etomin.png"
+                        alt={"etomin"}
+                        width={250}
+                        height={30}
+                      />
+                      <Image
+                        src="/cards.png"
+                        alt={"cards"}
+                        width={220}
+                        height={30}
+                      />
+                    </div>
                   </div>
                 </form>
               )}
@@ -1015,9 +1031,9 @@ export default function CartPage() {
                     <span className="font-medium text-gray-700">
                       {coupon
                         ? t("summary.couponApplied", {
-                            code: coupon.code,
-                            discount: coupon.discount,
-                          })
+                          code: coupon.code,
+                          discount: coupon.discount,
+                        })
                         : t("summary.noCoupon")}
                     </span>
                   </div>
@@ -1030,13 +1046,6 @@ export default function CartPage() {
                   </div>
 
                   <div className="flex items-center justify-between text-gray-600">
-                    <span>{t("summary.vat")}</span>
-                    <span className="font-medium text-gray-700">
-                      {formatPrice(vatAmount)}
-                    </span>
-                  </div>
-
-                  <div className="flex items-center justify-between text-gray-600">
                     <span className="text-lg font-semibold text-gray-900">
                       {t("summary.total")}
                     </span>
@@ -1044,6 +1053,7 @@ export default function CartPage() {
                       {formatPrice(total)}
                     </span>
                   </div>
+
                 </div>
 
                 <div className="mt-6 rounded-3xl border border-[#dbeafe] bg-gradient-to-br from-[#f5f3ff] to-[#ecfdf5] p-5">

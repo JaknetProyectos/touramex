@@ -5,7 +5,7 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const BUSINESS_EMAIL = "contacto@innovacodigo.com";
+const BUSINESS_EMAIL = "hello@touramex.com";
 
 interface CartTour {
   id: string;

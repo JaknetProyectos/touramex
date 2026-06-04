@@ -15,6 +15,15 @@
     "logoAlt": "Touramex logo"
   },
   "hero": {
+    "destinationOptions": {
+      "cdmx": "Mexico City",
+      "gastronomy": "Mexico City Gastronomy",
+      "guanajuato": "Guanajuato",
+      "losCabos": "Los Cabos",
+      "oaxaca": "Oaxaca",
+      "yucatan": "Yucatán",
+      "cancun": "Cancun"
+    },
     "backgroundAlt": "Travel background",
     "badge": "Unique experiences in Mexico",
     "title": {
@@ -319,7 +328,7 @@
       "title": "Legal information",
       "privacy": "Privacy policy",
       "terms": "Terms and conditions",
-      "refunds": "Refunds and returns policy"
+      "refunds": "Return and Refund Policy"
     },
     "copyright": "Copyright © 2026. All rights reserved.",
     "designed": "Designed for memorable experiences."
@@ -540,6 +549,7 @@
     "reserveNow": "Book now and pay later",
     "relatedSubtitle": "You may also like",
     "relatedTitle": "Related tours",
-    "viewDetails": "View details"
+    "viewDetails": "View details",
+    "disclaimer": "All reservations and service requests are subject to availability. Final confirmation depends on the verification of allotments, resources, and corresponding suppliers. TOURAMEX reserves the right to adjust dates, times, or details of the experience, always guaranteeing to notify the client as far in advance as possible."
   }
 }

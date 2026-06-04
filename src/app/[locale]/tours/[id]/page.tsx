@@ -217,7 +217,20 @@ export default function TourDetailPage() {
                   content={tourDescription}
                 />
               </div>
+
+
+              <div className="rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-2xl p-8 md:p-10 shadow-2xl">
+                <div className="flex items-center gap-3 mb-6">
+                  <div>
+                    <p className="text-emerald-300 text-sm font-medium">
+                      {t("disclaimer")}
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+
+
 
             {/* Sidebar */}
             <aside className="lg:sticky lg:top-6">

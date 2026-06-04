@@ -3,8 +3,8 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const WEBSITE_URL = "https://Touramex.com.mx";
-const LOGO_URL = `${WEBSITE_URL}/logo.png`;
+const WEBSITE_URL = "https://touramex.com";
+const LOGO_URL = `https://touramex.com/logo.png`;
 
 const BEACH_IMAGE =
   "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop";
@@ -28,7 +28,7 @@ export async function POST(req: Request) {
     // =========================
 
     await resend.emails.send({
-      from: "Touramex <gestion@softvora.com.mx>",
+      from: "Touramex <hola@touramex.com>",
       to: [email],
       subject: "Recibimos tu solicitud ✨",
       html: `
@@ -411,8 +411,8 @@ export async function POST(req: Request) {
     // =========================
 
     await resend.emails.send({
-      from: "Formulario Web <gestion@Touramex.com.mx>",
-      to: ["ventas@Touramex.com.mx"],
+      from: "Formulario Web <hola@touramex.com>",
+      to: ["hola@touramex.com"],
       subject: `Nuevo lead recibido · ${asunto}`,
       html: `
       <div style="

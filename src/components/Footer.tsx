@@ -151,7 +151,7 @@ export default function Footer() {
 
             <div className="space-y-3">
               <Link
-                href="#"
+                href="/legal/privacidad"
                 className="group flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-white/80 backdrop-blur-xl transition-all duration-300 hover:border-violet-400/30 hover:bg-white/10 hover:text-white"
               >
                 <span>
@@ -162,7 +162,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="#"
+                href="/legal/terminos"
                 className="group flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-white/80 backdrop-blur-xl transition-all duration-300 hover:border-violet-400/30 hover:bg-white/10 hover:text-white"
               >
                 <span>
@@ -173,7 +173,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="#"
+                href="/legal/reembolsos"
                 className="group flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-white/80 backdrop-blur-xl transition-all duration-300 hover:border-violet-400/30 hover:bg-white/10 hover:text-white"
               >
                 <span>

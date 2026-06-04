@@ -50,11 +50,11 @@ export default function CategoryToursPage() {
   const t = useTranslations("categoryPage");
 
   const params = useParams();
-  const locale = useLocale()
+  const locale = useLocale();
+
   const slug = params.slug as string;
 
-  const { category, loading: categoryLoading } =
-    useCategory(slug);
+  const { category, loading: categoryLoading } = useCategory(slug);
 
   const {
     tours,
@@ -62,12 +62,23 @@ export default function CategoryToursPage() {
     error,
   } = useTours();
 
-  const [viewMode, setViewMode] = useState<
-    "list" | "grid"
-  >("grid");
+  const [viewMode, setViewMode] = useState<"list" | "grid">("grid");
 
-  const [sortBy, setSortBy] =
-    useState<SortBy>("default");
+  const [sortBy, setSortBy] = useState<SortBy>("default");
+
+  /* =========================
+     CATEGORY JOIN MAP
+  ========================= */
+
+  const categoryAliases: Record<string, string[]> = {
+    cdmx: ["cdmx", "experiencias-gastronomicas"],
+  };
+
+  const activeSlugs = categoryAliases[slug] || [slug];
+
+  /* =========================
+     FILTERED TOURS
+  ========================= */
 
   const filteredTours = useMemo(() => {
     const filtered = tours.filter((tour) => {
@@ -77,34 +88,39 @@ export default function CategoryToursPage() {
         .replace(/[\u0300-\u036f]/g, "")
         .replace(/\s+/g, "-");
 
-      return normalizedDestination === slug;
+      return activeSlugs.includes(normalizedDestination);
     });
 
     return [...filtered].sort((a, b) => {
-      if (sortBy === "price-asc")
+      if (sortBy === "price-asc") {
         return a.price - b.price;
+      }
 
-      if (sortBy === "price-desc")
+      if (sortBy === "price-desc") {
         return b.price - a.price;
+      }
 
-      if (sortBy === "name")
+      if (sortBy === "name") {
         return a.title.localeCompare(b.title);
+      }
 
-      if (sortBy === "newest-desc")
+      if (sortBy === "newest-desc") {
         return (
           new Date(b.created_at).getTime() -
           new Date(a.created_at).getTime()
         );
+      }
 
-      if (sortBy === "newest-asc")
+      if (sortBy === "newest-asc") {
         return (
           new Date(a.created_at).getTime() -
           new Date(b.created_at).getTime()
         );
+      }
 
       return 0;
     });
-  }, [tours, slug, sortBy]);
+  }, [tours, activeSlugs, sortBy]);
 
   const loading = categoryLoading || toursLoading;
 
@@ -250,8 +266,8 @@ export default function CategoryToursPage() {
                 <button
                   onClick={() => setViewMode("list")}
                   className={`flex h-12 w-12 items-center justify-center rounded-xl transition-all ${viewMode === "list"
-                      ? "bg-gradient-to-r from-[#7c3aed] to-[#22c55e] text-white shadow-lg"
-                      : "text-gray-500 hover:bg-white"
+                    ? "bg-gradient-to-r from-[#7c3aed] to-[#22c55e] text-white shadow-lg"
+                    : "text-gray-500 hover:bg-white"
                     }`}
                 >
                   <List size={20} />
@@ -260,8 +276,8 @@ export default function CategoryToursPage() {
                 <button
                   onClick={() => setViewMode("grid")}
                   className={`flex h-12 w-12 items-center justify-center rounded-xl transition-all ${viewMode === "grid"
-                      ? "bg-gradient-to-r from-[#7c3aed] to-[#22c55e] text-white shadow-lg"
-                      : "text-gray-500 hover:bg-white"
+                    ? "bg-gradient-to-r from-[#7c3aed] to-[#22c55e] text-white shadow-lg"
+                    : "text-gray-500 hover:bg-white"
                     }`}
                 >
                   <Grid3X3 size={20} />
@@ -315,15 +331,15 @@ export default function CategoryToursPage() {
               <div
                 key={tour.id}
                 className={`group overflow-hidden rounded-[32px] border border-white/60 bg-white shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl ${viewMode === "list"
-                    ? "flex flex-col lg:flex-row"
-                    : ""
+                  ? "flex flex-col lg:flex-row"
+                  : ""
                   }`}
               >
                 {/* IMAGE */}
                 <div
                   className={`relative overflow-hidden ${viewMode === "list"
-                      ? "lg:w-[380px]"
-                      : ""
+                    ? "lg:w-[380px]"
+                    : ""
                     }`}
                 >
                   <img
@@ -333,8 +349,8 @@ export default function CategoryToursPage() {
                     }
                     alt={tour.title}
                     className={`w-full object-cover transition-transform duration-700 group-hover:scale-110 ${viewMode === "list"
-                        ? "h-[320px] lg:h-full"
-                        : "h-[280px]"
+                      ? "h-[320px] lg:h-full"
+                      : "h-[280px]"
                       }`}
                   />
 
