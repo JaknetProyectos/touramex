@@ -411,8 +411,8 @@ export async function POST(req: Request) {
     // =========================
 
     await resend.emails.send({
-      from: "Formulario Web <gestion@Touramex.com.mx>",
-      to: ["ventas@Touramex.com.mx"],
+      from: "Formulario Web <hola@Touramex.com>",
+      to: ["hola@Touramex.com"],
       subject: `Nuevo lead recibido · ${asunto}`,
       html: `
       <div style="
