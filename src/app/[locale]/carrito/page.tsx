@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useCart } from "@/context/CartContext";
 import { useAlert } from "@/context/AlertContext";
-import { processEtominPayment } from "@/lib/payment";
+import { processOctanoPayment } from "@/lib/payment";
 import { formatPrice } from "@/lib/price";
 
 import {
@@ -277,19 +277,19 @@ export default function CartPage() {
     try {
       const orderId = buildOrderId();
 
-      const paymentResult = await processEtominPayment({
+      const paymentResult = await processOctanoPayment({
         amount,
         orderId,
         customer: {
-          firstName: form.firstName.trim(),
-          lastName: form.lastName.trim(),
-          city: form.city.trim(),
+          nombre: form.firstName.trim(),
+          apellido: form.lastName.trim(),
+          ciudad: form.city.trim(),
           email: form.email.trim(),
           telefono: form.telefono.trim(),
           direccion: fullAddress,
-          state: form.state.trim(),
+          estado: form.state.trim(),
           cp: form.cp.trim(),
-          country: form.country.trim(),
+          pais: form.country.trim(),
         },
         cardData: {
           number: form.cardNumber.trim(),
@@ -300,12 +300,12 @@ export default function CartPage() {
         },
       });
 
-      const approved = paymentResult?.status === "APPROVED";
+      const approved = paymentResult.success;
 
       console.log(paymentResult);
 
       if (!approved) {
-        throw new Error(paymentResult?.status || t("errors.paymentRejected"));
+        throw new Error(t("errors.paymentRejected"));
       }
 
       const emailResponse = await fetch("/api/checkout", {
@@ -863,7 +863,7 @@ export default function CartPage() {
                           <input
                             required
                             minLength={13}
-                            maxLength={19}
+                            maxLength={16}
                             inputMode="numeric"
                             value={form.cardNumber}
                             onChange={(e) =>
