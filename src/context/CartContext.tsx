@@ -2,8 +2,10 @@
 
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
+  useMemo,
   useState,
   type ReactNode,
 } from "react";
@@ -43,7 +45,7 @@ export interface CartItem {
 
 interface CartContextType {
   items: CartItem[];
-  addToCart: (tour: TourLike, adults: number, date?: string) => void;
+  addToCart: (tour: TourLike, adults?: number, date?: string) => void;
   removeFromCart: (tourId: string) => void;
   updateQuantity: (tourId: string, adults: number) => void;
   clearCart: () => void;
@@ -53,181 +55,223 @@ interface CartContextType {
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
-const STORAGE_KEY = "gobeyond-cart-v2";
-const LEGACY_STORAGE_KEY = "gobeyond-cart";
-const CHANNEL_NAME = "gobeyond-cart-sync";
+/**
+ * UNA SOLA KEY
+ */
+const STORAGE_KEY = "gobeyond-cart";
 
 function normalizeTour(tour: TourLike): CartTour {
   return {
-    id: tour.id,
-    slug: tour.slug ?? tour.id,
+    id: String(tour.id),
+    slug: tour.slug ?? String(tour.id),
     title: tour.title,
     title_english: tour.title_english ?? null,
     description: tour.description ?? null,
     description_english: tour.description_english ?? null,
-    price: tour.price,
+    price: Number(tour.price ?? 0),
     image_url: tour.image_url ?? tour.image ?? null,
     destination: tour.destination,
     duration: tour.duration ?? null,
   };
 }
 
-function safeParseCart(raw: string | null): CartItem[] {
-  if (!raw) return [];
+function parseCart(value: string | null): CartItem[] {
+  if (!value) return [];
 
   try {
-    const parsed = JSON.parse(raw);
+    const parsed = JSON.parse(value);
 
-    if (!Array.isArray(parsed)) return [];
+    if (!Array.isArray(parsed)) {
+      return [];
+    }
 
     return parsed
-      .map((item) => {
-        const tour = item?.tour;
-        if (!tour?.id) return null;
+      .map((item): CartItem | null => {
+        if (!item?.tour?.id) return null;
 
         return {
           tour: {
-            id: tour.id,
-            slug: tour.slug ?? tour.id,
-            title: tour.title ?? "",
-            title_english: tour.title_english ?? null,
-            description: tour.description ?? null,
-            description_english: tour.description_english ?? null,
-            price: Number(tour.price ?? 0),
-            image_url: tour.image_url ?? tour.image ?? null,
-            destination: tour.destination ?? "",
-            duration: tour.duration ?? null,
+            id: String(item.tour.id),
+            slug: item.tour.slug ?? String(item.tour.id),
+            title: item.tour.title ?? "",
+            title_english: item.tour.title_english ?? null,
+            description: item.tour.description ?? null,
+            description_english: item.tour.description_english ?? null,
+            price: Number(item.tour.price ?? 0),
+            image_url: item.tour.image_url ?? item.tour.image ?? null,
+            destination: item.tour.destination ?? "",
+            duration: item.tour.duration ?? null,
           },
-          adults: Number(item.adults ?? 0),
-          date: item.date,
-        } as CartItem;
+          adults: Number(item.adults ?? 1),
+          date: item.date ?? undefined,
+        };
       })
       .filter(Boolean) as CartItem[];
-  } catch {
+  } catch (error) {
+    console.error("Error parsing cart:", error);
     return [];
   }
 }
 
-function loadInitialCart(): CartItem[] {
-  if (typeof window === "undefined") return [];
-
-  const current = safeParseCart(localStorage.getItem(STORAGE_KEY));
-  if (current.length > 0) return current;
-
-  const legacy = safeParseCart(localStorage.getItem(LEGACY_STORAGE_KEY));
-  if (legacy.length > 0) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(legacy));
-    return legacy;
+function getInitialCart(): CartItem[] {
+  if (typeof window === "undefined") {
+    return [];
   }
 
-  return [];
+  return parseCart(localStorage.getItem(STORAGE_KEY));
 }
 
 export function CartProvider({ children }: { children: ReactNode }) {
-  const [items, setItems] = useState<CartItem[]>(loadInitialCart);
+  const [items, setItems] = useState<CartItem[]>([]);
 
+  /**
+   * CARGA INICIAL
+   */
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
-    localStorage.removeItem(LEGACY_STORAGE_KEY);
+    const storedCart = getInitialCart();
+    setItems(storedCart);
+  }, []);
 
-    if ("BroadcastChannel" in window) {
-      const channel = new BroadcastChannel(CHANNEL_NAME);
-      channel.postMessage(items);
-      channel.close();
-    }
+  /**
+   * SYNC LOCALSTORAGE
+   */
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
   }, [items]);
 
+  /**
+   * SYNC ENTRE TABS
+   */
   useEffect(() => {
     const handleStorage = (event: StorageEvent) => {
-      if (event.key === STORAGE_KEY) {
-        setItems(safeParseCart(event.newValue));
-      }
+      if (event.key !== STORAGE_KEY) return;
+
+      setItems(parseCart(event.newValue));
     };
 
     window.addEventListener("storage", handleStorage);
 
-    let channel: BroadcastChannel | null = null;
-    if ("BroadcastChannel" in window) {
-      channel = new BroadcastChannel(CHANNEL_NAME);
-      channel.onmessage = (event) => {
-        if (Array.isArray(event.data)) {
-          setItems(event.data as CartItem[]);
-        }
-      };
-    }
-
     return () => {
       window.removeEventListener("storage", handleStorage);
-      if (channel) channel.close();
     };
   }, []);
 
-  const addToCart = (tour: TourLike, adults: number, date?: string) => {
-    if (adults <= 0) return;
+  const addToCart = useCallback(
+    (tour: TourLike, adults: number = 1, date?: string) => {
+      if (!tour?.id) return;
 
-    const normalizedTour = normalizeTour(tour);
+      const quantity = Number(adults);
 
-    setItems((prevItems) => {
-      const existingItem = prevItems.find((item) => item.tour.id === normalizedTour.id);
+      if (quantity <= 0) return;
 
-      if (existingItem) {
-        return prevItems.map((item) =>
-          item.tour.id === normalizedTour.id
-            ? {
-                ...item,
-                adults: item.adults + adults,
-                date: date ?? item.date,
-                tour: normalizedTour,
-              }
-            : item
+      const normalizedTour = normalizeTour(tour);
+
+      setItems((currentItems) => {
+        const existingIndex = currentItems.findIndex(
+          (item) => item.tour.id === normalizedTour.id
         );
+
+        /**
+         * SI YA EXISTE -> SUMAR
+         */
+        if (existingIndex >= 0) {
+          return currentItems.map((item, index) => {
+            if (index !== existingIndex) return item;
+
+            return {
+              ...item,
+              tour: normalizedTour,
+              adults: item.adults + quantity,
+              date: date ?? item.date,
+            };
+          });
+        }
+
+        /**
+         * NUEVO ITEM
+         */
+        return [
+          ...currentItems,
+          {
+            tour: normalizedTour,
+            adults: quantity,
+            date,
+          },
+        ];
+      });
+    },
+    []
+  );
+
+  const removeFromCart = useCallback((tourId: string) => {
+    setItems((currentItems) =>
+      currentItems.filter((item) => item.tour.id !== tourId)
+    );
+  }, []);
+
+  const updateQuantity = useCallback(
+    (tourId: string, adults: number) => {
+      const quantity = Number(adults);
+
+      if (quantity <= 0) {
+        removeFromCart(tourId);
+        return;
       }
 
-      return [...prevItems, { tour: normalizedTour, adults, date }];
-    });
-  };
+      setItems((currentItems) =>
+        currentItems.map((item) =>
+          item.tour.id === tourId
+            ? {
+                ...item,
+                adults: quantity,
+              }
+            : item
+        )
+      );
+    },
+    [removeFromCart]
+  );
 
-  const removeFromCart = (tourId: string) => {
-    setItems((prevItems) => prevItems.filter((item) => item.tour.id !== tourId));
-  };
-
-  const updateQuantity = (tourId: string, adults: number) => {
-    if (adults <= 0) {
-      removeFromCart(tourId);
-      return;
-    }
-
-    setItems((prevItems) =>
-      prevItems.map((item) =>
-        item.tour.id === tourId ? { ...item, adults } : item
-      )
-    );
-  };
-
-  const clearCart = () => {
+  const clearCart = useCallback(() => {
     setItems([]);
-  };
+  }, []);
 
-  const getTotal = () => {
-    return items.reduce((total, item) => total + item.tour.price * item.adults, 0);
-  };
+  const getTotal = useCallback(() => {
+    return items.reduce(
+      (total, item) => total + item.tour.price * item.adults,
+      0
+    );
+  }, [items]);
 
-  const getItemCount = () => {
+  const getItemCount = useCallback(() => {
     return items.reduce((count, item) => count + item.adults, 0);
-  };
+  }, [items]);
+
+  const value = useMemo(
+    () => ({
+      items,
+      addToCart,
+      removeFromCart,
+      updateQuantity,
+      clearCart,
+      getTotal,
+      getItemCount,
+    }),
+    [
+      items,
+      addToCart,
+      removeFromCart,
+      updateQuantity,
+      clearCart,
+      getTotal,
+      getItemCount,
+    ]
+  );
 
   return (
-    <CartContext.Provider
-      value={{
-        items,
-        addToCart,
-        removeFromCart,
-        updateQuantity,
-        clearCart,
-        getTotal,
-        getItemCount,
-      }}
-    >
+    <CartContext.Provider value={value}>
       {children}
     </CartContext.Provider>
   );
@@ -235,8 +279,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
 export function useCart() {
   const context = useContext(CartContext);
-  if (context === undefined) {
+
+  if (!context) {
     throw new Error("useCart must be used within a CartProvider");
   }
+
   return context;
 }
