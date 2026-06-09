@@ -4,7 +4,7 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const WEBSITE_URL = "https://touramex.com";
-const LOGO_URL = `${WEBSITE_URL}/logo.png`;
+const LOGO_URL = `https://touramex.com/logo.png`;
 
 const BEACH_IMAGE =
   "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop";
@@ -345,7 +345,7 @@ export async function POST(req: Request) {
                       0 15px 35px rgba(124,58,237,.25);
                   "
                 >
-                  Explorar touramex.com
+                  Explorar touramex.com.mx
                 </a>
 
               </div>
@@ -483,7 +483,7 @@ export async function POST(req: Request) {
                   color:rgba(255,255,255,.82);
                   font-size:14px;
                 ">
-                  Touramex.com
+                  Touramex.com.mx
                 </p>
               </div>
             </div>

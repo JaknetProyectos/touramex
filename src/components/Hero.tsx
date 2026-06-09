@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import {
   Search,
@@ -12,26 +12,45 @@ import {
 
 import { useTranslations } from "next-intl";
 
-import { useCategories } from "@/hooks/useCategories";
 
 export default function Hero() {
   const t = useTranslations("hero");
 
   const router = useRouter();
-  const { categories, loading } = useCategories();
-
   const [destination, setDestination] = useState("");
   const [adults, setAdults] = useState(t("travelers.options.one"));
   const [date, setDate] = useState("");
 
-  const destinationOptions = useMemo(() => {
-    return categories
-      .filter((category) => Boolean(category?.slug) && Boolean(category?.title))
-      .map((category) => ({
-        slug: category.slug,
-        label: category.title,
-      }));
-  }, [categories]);
+  const destinationOptions = [
+    {
+      slug: "cdmx",
+      label: t("destinationOptions.cdmx"),
+    },
+    {
+      slug: "experiencias-gastronomicas",
+      label: t("destinationOptions.gastronomy"),
+    },
+    {
+      slug: "guanajuato",
+      label: t("destinationOptions.guanajuato"),
+    },
+    {
+      slug: "los-cabos",
+      label: t("destinationOptions.losCabos"),
+    },
+    {
+      slug: "oaxaca",
+      label: t("destinationOptions.oaxaca"),
+    },
+    {
+      slug: "yucatan",
+      label: t("destinationOptions.yucatan"),
+    },
+    {
+      slug: "cancun",
+      label: t("destinationOptions.cancun"),
+    },
+  ];
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -93,16 +112,14 @@ export default function Hero() {
                   {t("destination.label")}
                 </p>
 
+                {/** cdmx, gastronomía cdmx, guanajuato, los cabos, oaxaca, yucatan y cancún */}
                 <select
                   value={destination}
                   onChange={(e) => setDestination(e.target.value)}
-                  disabled={loading}
-                  className="w-full bg-transparent text-sm font-medium text-gray-800 outline-none disabled:cursor-not-allowed"
+                  className="w-full bg-transparent text-sm font-medium text-gray-800 outline-none"
                 >
                   <option value="">
-                    {loading
-                      ? t("destination.loading")
-                      : t("destination.placeholder")}
+                    {t("destination.placeholder")}
                   </option>
 
                   {destinationOptions.map((dest) => (

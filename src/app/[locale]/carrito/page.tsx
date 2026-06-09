@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useCart } from "@/context/CartContext";
 import { useAlert } from "@/context/AlertContext";
-import { processEtominPayment } from "@/lib/payment";
+import { processOctanoPayment } from "@/lib/payment";
 import { formatPrice } from "@/lib/price";
 
 import {
@@ -32,6 +32,7 @@ import {
 } from "lucide-react";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const COUPONS = [
   { code: "TOURA10", discount: 10 },
@@ -86,7 +87,7 @@ const iconInputClass =
   "w-full rounded-2xl border border-white/70 bg-white py-3 pl-11 pr-4 outline-none transition-colors placeholder:text-gray-400 focus:border-[#7c3aed] focus:ring-4 focus:ring-[#7c3aed]/10";
 
 function sanitizeCardNumber(value: string) {
-  return value.replace(/\D/g, "").slice(0, 16);
+  return value;
 }
 
 function buildOrderId() {
@@ -98,8 +99,8 @@ function buildOrderId() {
 }
 
 function formatCardDisplay(value: string) {
-  const digits = sanitizeCardNumber(value);
-  return digits.replace(/(.{4})/g, "$1 ").trim();
+  const digits = value;
+  return digits;
 }
 
 function CartSkeleton() {
@@ -203,7 +204,7 @@ export default function CartPage() {
   const discountAmount = coupon ? (subtotal * coupon.discount) / 100 : 0;
   const subtotalAfterDiscount = Math.max(0, subtotal - discountAmount);
   const vatAmount = subtotalAfterDiscount * 0.16;
-  const total = Math.max(0, subtotalAfterDiscount + vatAmount);
+  const total = Math.max(0, subtotalAfterDiscount);
 
   const fullAddress = [form.calle.trim(), form.numero.trim(), form.colonia.trim()]
     .filter(Boolean)
@@ -276,22 +277,22 @@ export default function CartPage() {
     try {
       const orderId = buildOrderId();
 
-      const paymentResult = await processEtominPayment({
+      const paymentResult = await processOctanoPayment({
         amount,
         orderId,
         customer: {
-          firstName: form.firstName.trim(),
-          lastName: form.lastName.trim(),
-          city: form.city.trim(),
+          nombre: form.firstName.trim(),
+          apellido: form.lastName.trim(),
+          ciudad: form.city.trim(),
           email: form.email.trim(),
           telefono: form.telefono.trim(),
           direccion: fullAddress,
-          state: form.state.trim(),
+          estado: form.state.trim(),
           cp: form.cp.trim(),
-          country: form.country.trim(),
+          pais: form.country.trim(),
         },
         cardData: {
-          number: form.cardNumber.replace(/\s/g, ""),
+          number: form.cardNumber.trim(),
           name: form.cardName.trim(),
           month: form.expMonth.trim(),
           year: form.expYear.trim(),
@@ -299,12 +300,12 @@ export default function CartPage() {
         },
       });
 
-      const approved = paymentResult?.status === "APPROVED";
+      const approved = paymentResult.success;
 
       console.log(paymentResult);
 
       if (!approved) {
-        throw new Error(paymentResult?.status || t("errors.paymentRejected"));
+        throw new Error(t("errors.paymentRejected"));
       }
 
       const emailResponse = await fetch("/api/checkout", {
@@ -862,9 +863,9 @@ export default function CartPage() {
                           <input
                             required
                             minLength={13}
-                            maxLength={19}
+                            maxLength={16}
                             inputMode="numeric"
-                            value={formatCardDisplay(form.cardNumber)}
+                            value={form.cardNumber}
                             onChange={(e) =>
                               setForm({
                                 ...form,
@@ -991,6 +992,21 @@ export default function CartPage() {
                         </>
                       )}
                     </button>
+
+                    <div className="flex flex-row items-center justify-between gap-6 p-6">
+                      <Image
+                        src="/etomin.png"
+                        alt={"etomin"}
+                        width={250}
+                        height={30}
+                      />
+                      <Image
+                        src="/cards.png"
+                        alt={"cards"}
+                        width={220}
+                        height={30}
+                      />
+                    </div>
                   </div>
                 </form>
               )}
@@ -1015,9 +1031,9 @@ export default function CartPage() {
                     <span className="font-medium text-gray-700">
                       {coupon
                         ? t("summary.couponApplied", {
-                            code: coupon.code,
-                            discount: coupon.discount,
-                          })
+                          code: coupon.code,
+                          discount: coupon.discount,
+                        })
                         : t("summary.noCoupon")}
                     </span>
                   </div>
@@ -1030,13 +1046,6 @@ export default function CartPage() {
                   </div>
 
                   <div className="flex items-center justify-between text-gray-600">
-                    <span>{t("summary.vat")}</span>
-                    <span className="font-medium text-gray-700">
-                      {formatPrice(vatAmount)}
-                    </span>
-                  </div>
-
-                  <div className="flex items-center justify-between text-gray-600">
                     <span className="text-lg font-semibold text-gray-900">
                       {t("summary.total")}
                     </span>
@@ -1044,6 +1053,7 @@ export default function CartPage() {
                       {formatPrice(total)}
                     </span>
                   </div>
+
                 </div>
 
                 <div className="mt-6 rounded-3xl border border-[#dbeafe] bg-gradient-to-br from-[#f5f3ff] to-[#ecfdf5] p-5">
