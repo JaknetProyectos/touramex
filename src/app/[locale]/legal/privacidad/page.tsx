@@ -29,14 +29,14 @@ function LegalEs() {
 
                 <p>
                     En cumplimiento con la
-                    <strong>
+{' '}<strong>
                         Ley Federal de Protección de Datos Personales en Posesión de los
                         Particulares
                     </strong>,
                     se informa que el responsable del tratamiento de los datos personales es
-                    <strong>HABITA TRAVEL S.A. DE C.V.</strong> (en adelante,
-                    “<strong>TOUR A MEX</strong>”), con domicilio en
-                    <strong>
+{' '}<strong>HABITA TRAVEL S.A. DE C.V.</strong>{' '}(en adelante,
+                    “<strong>TOURAMEX</strong>”), con domicilio en
+{' '}<strong>
                         Avenida Insurgentes Sur N°730, Piso 1, Oficina 234, Colonia del Valle
                         Centro, Alcaldía Benito Juárez, C.P. 03100, Ciudad de México
                     </strong>,
@@ -46,16 +46,16 @@ function LegalEs() {
 
                 <p>
                     Para efectos del presente Aviso, se entenderá por
-                    <strong>Titular</strong> a toda persona física cuyos datos sean recabados,
+{' '}<strong>Titular</strong>{' '}a toda persona física cuyos datos sean recabados,
                     incluyendo clientes, usuarios del sitio web, participantes de tours,
                     prospectos, proveedores-persona física, candidatos y cualquier individuo
-                    que interactúe con <strong>TOUR A MEX</strong>.
+                    que interactúe con{' '}<strong>TOURAMEX</strong>.
                 </p>
 
                 <h2>Datos que se recaban</h2>
 
                 <p>
-                    <strong>TOUR A MEX</strong> podrá solicitar y tratar, de manera enunciativa
+{' '}<strong>TOURAMEX</strong>{' '}podrá solicitar y tratar, de manera enunciativa
                     mas no limitativa, los siguientes datos personales:
                 </p>
 
@@ -113,7 +113,7 @@ function LegalEs() {
 
                     <li>
                         Cumplimiento de obligaciones legales aplicables a
-                        <strong>TOUR A MEX</strong>.
+{' '}<strong>TOURAMEX</strong>.
                     </li>
                 </ol>
 
@@ -129,7 +129,7 @@ function LegalEs() {
 
                     <li>
                         Invitaciones a actividades, eventos o lanzamientos especiales de
-                        <strong>TOUR A MEX</strong>.
+{' '}<strong>TOURAMEX</strong>.
                     </li>
 
                     <li>
@@ -141,7 +141,7 @@ function LegalEs() {
                 <h2>Transferencias de datos</h2>
 
                 <p>
-                    <strong>TOUR A MEX</strong> podrá compartir datos personales con terceros
+{' '}<strong>TOURAMEX</strong>{' '}podrá compartir datos personales con terceros
                     únicamente en los siguientes casos:
                 </p>
 
@@ -164,14 +164,14 @@ function LegalEs() {
                 </ul>
 
                 <p>
-                    En todos los casos, <strong>TOUR A MEX</strong> exigirá a los terceros
+                    En todos los casos,{' '}<strong>TOURAMEX</strong>{' '}exigirá a los terceros
                     receptores el mismo nivel de confidencialidad y protección que ella aplica.
                 </p>
 
                 <h2>Medidas de seguridad</h2>
 
                 <p>
-                    <strong>TOUR A MEX</strong> implementa medidas administrativas, técnicas y
+{' '}<strong>TOURAMEX</strong>{' '}implementa medidas administrativas, técnicas y
                     físicas para resguardar los datos personales contra daño, pérdida,
                     alteración, destrucción o acceso no autorizado.
                 </p>
@@ -179,21 +179,21 @@ function LegalEs() {
                 <p>
                     No obstante, el Titular reconoce que ningún sistema es completamente seguro
                     y que podrían existir riesgos derivados de causas externas al control de
-                    <strong>TOUR A MEX</strong>.
+{' '}<strong>TOURAMEX</strong>.
                 </p>
 
                 <h2>Derechos ARCO</h2>
 
                 <p>
                     El Titular podrá ejercer en cualquier momento sus derechos de
-                    <strong>Acceso, Rectificación, Cancelación y Oposición (ARCO)</strong>,
+{' '}<strong>Acceso, Rectificación, Cancelación y Oposición (ARCO)</strong>,
                     así como revocar el consentimiento otorgado para el tratamiento de sus
                     datos personales.
                 </p>
 
                 <p>
                     Para ello, deberá enviar una solicitud por escrito al correo
-                    <strong>hola@touramex.com</strong> con al menos:
+{' '}<strong>hola@touramex.com</strong>{' '}con al menos:
                 </p>
 
                 <ul>
@@ -212,8 +212,8 @@ function LegalEs() {
                 </ul>
 
                 <p>
-                    <strong>TOUR A MEX</strong> acusa recibo y dará respuesta en un plazo
-                    máximo de <strong>20 días hábiles</strong> a partir de la recepción de la
+{' '}<strong>TOURAMEX</strong>{' '}acusa recibo y dará respuesta en un plazo
+                    máximo de{' '}<strong>20 días hábiles</strong>{' '}a partir de la recepción de la
                     solicitud.
                 </p>
 
@@ -229,7 +229,7 @@ function LegalEs() {
                 <h2>Uso de cookies y tecnologías similares</h2>
 
                 <p>
-                    El Sitio Web de <strong>TOUR A MEX</strong> podrá utilizar cookies, web
+                    El Sitio Web de{' '}<strong>TOURAMEX</strong>{' '}podrá utilizar cookies, web
                     beacons u otras tecnologías similares para mejorar la experiencia del
                     usuario, analizar patrones de navegación y optimizar la oferta de
                     servicios.
@@ -244,7 +244,7 @@ function LegalEs() {
                 <h2>Modificaciones al aviso de privacidad</h2>
 
                 <p>
-                    <strong>TOUR A MEX</strong> podrá actualizar o modificar en cualquier
+{' '}<strong>TOURAMEX</strong>{' '}podrá actualizar o modificar en cualquier
                     momento el presente Aviso de Privacidad para reflejar cambios legislativos,
                     regulatorios o internos.
                 </p>
@@ -259,8 +259,8 @@ function LegalEs() {
                 <p>
                     Para cualquier asunto relacionado con el presente Aviso de Privacidad, el
                     Titular podrá comunicarse al correo
-                    <strong>hola@touramex.com</strong> o acudir al domicilio en
-                    <strong>
+{' '}<strong>hola@touramex.com</strong>{' '}o acudir al domicilio en
+{' '}<strong>
                         Avenida Insurgentes Sur N°730, Piso 1, Oficina 234, Colonia del Valle
                         Centro, Alcaldía Benito Juárez, C.P. 03100, Ciudad de México
                     </strong>.
@@ -296,14 +296,14 @@ function LegalEn() {
 
                 <p>
                     In compliance with the
-                    <strong>
+{' '}<strong>
                         Federal Law on Protection of Personal Data Held by Private Parties
                     </strong>,
                     it is hereby informed that the controller responsible for the processing of
                     personal data is
-                    <strong>HABITA TRAVEL S.A. DE C.V.</strong> (hereinafter,
-                    “<strong>TOUR A MEX</strong>”), with registered address at
-                    <strong>
+{' '}<strong>HABITA TRAVEL S.A. DE C.V.</strong>{' '}(hereinafter,
+                    “<strong>TOURAMEX</strong>”), with registered address at
+{' '}<strong>
                         Avenida Insurgentes Sur No. 730, Floor 1, Office 234, Colonia del Valle
                         Centro, Benito Juárez Borough, ZIP Code 03100, Mexico City
                     </strong>,
@@ -312,17 +312,17 @@ function LegalEn() {
                 </p>
 
                 <p>
-                    For the purposes of this Notice, the term <strong>Data Subject</strong>
-                    shall refer to any individual whose personal data is collected, including
+                    For the purposes of this Notice, the term{' '}<strong>Data Subject</strong>
+{' '}                    shall refer to any individual whose personal data is collected, including
                     customers, website users, tour participants, prospects, individual
                     suppliers, job applicants, and any person who interacts with
-                    <strong>TOUR A MEX</strong>.
+{' '}<strong>TOURAMEX</strong>.
                 </p>
 
                 <h2>Data Collected</h2>
 
                 <p>
-                    <strong>TOUR A MEX</strong> may request and process, including but not
+{' '}<strong>TOURAMEX</strong>{' '}may request and process, including but not
                     limited to, the following personal data:
                 </p>
 
@@ -379,7 +379,7 @@ function LegalEn() {
 
                     <li>
                         Compliance with legal obligations applicable to
-                        <strong>TOUR A MEX</strong>.
+{' '}<strong>TOURAMEX</strong>.
                     </li>
                 </ol>
 
@@ -395,7 +395,7 @@ function LegalEn() {
 
                     <li>
                         Invitations to activities, events, or special launches by
-                        <strong>TOUR A MEX</strong>.
+{' '}<strong>TOURAMEX</strong>.
                     </li>
 
                     <li>
@@ -407,7 +407,7 @@ function LegalEn() {
                 <h2>Data Transfers</h2>
 
                 <p>
-                    <strong>TOUR A MEX</strong> may share personal data with third parties only
+{' '}<strong>TOURAMEX</strong>{' '}may share personal data with third parties only
                     in the following cases:
                 </p>
 
@@ -428,7 +428,7 @@ function LegalEn() {
                 </ul>
 
                 <p>
-                    In all cases, <strong>TOUR A MEX</strong> will require third-party
+                    In all cases,{' '}<strong>TOURAMEX</strong>{' '}will require third-party
                     recipients to maintain the same level of confidentiality and protection
                     applied by the company.
                 </p>
@@ -436,7 +436,7 @@ function LegalEn() {
                 <h2>Security Measures</h2>
 
                 <p>
-                    <strong>TOUR A MEX</strong> implements administrative, technical, and
+{' '}<strong>TOURAMEX</strong>{' '}implements administrative, technical, and
                     physical measures to protect personal data against damage, loss,
                     alteration, destruction, or unauthorized access.
                 </p>
@@ -444,14 +444,14 @@ function LegalEn() {
                 <p>
                     Nevertheless, the Data Subject acknowledges that no system is completely
                     secure and that risks arising from causes beyond the control of
-                    <strong>TOUR A MEX</strong> may exist.
+{' '}<strong>TOURAMEX</strong>{' '}may exist.
                 </p>
 
                 <h2>ARCO Rights</h2>
 
                 <p>
                     The Data Subject may exercise at any time their rights of
-                    <strong>
+{' '}<strong>
                         Access, Rectification, Cancellation, and Opposition (ARCO)
                     </strong>,
                     as well as revoke the consent granted for the processing of their personal
@@ -460,7 +460,7 @@ function LegalEn() {
 
                 <p>
                     To do so, the Data Subject must send a written request to
-                    <strong>hola@touramex.com</strong> including at least:
+{' '}<strong>hola@touramex.com</strong>{' '}including at least:
                 </p>
 
                 <ul>
@@ -479,8 +479,8 @@ function LegalEn() {
                 </ul>
 
                 <p>
-                    <strong>TOUR A MEX</strong> will acknowledge receipt and respond within a
-                    maximum period of <strong>20 business days</strong> from the receipt of the
+{' '}<strong>TOURAMEX</strong>{' '}will acknowledge receipt and respond within a
+                    maximum period of{' '}<strong>20 business days</strong>{' '}from the receipt of the
                     request.
                 </p>
 
@@ -495,7 +495,7 @@ function LegalEn() {
                 <h2>Use of Cookies and Similar Technologies</h2>
 
                 <p>
-                    The <strong>TOUR A MEX</strong> website may use cookies, web beacons, or
+                    The{' '}<strong>TOURAMEX</strong>{' '}website may use cookies, web beacons, or
                     other similar technologies to improve user experience, analyze browsing
                     patterns, and optimize service offerings.
                 </p>
@@ -508,7 +508,7 @@ function LegalEn() {
                 <h2>Modifications to the Privacy Notice</h2>
 
                 <p>
-                    <strong>TOUR A MEX</strong> may update or modify this Privacy Notice at any
+{' '}<strong>TOURAMEX</strong>{' '}may update or modify this Privacy Notice at any
                     time to reflect legislative, regulatory, or internal changes.
                 </p>
 
@@ -521,8 +521,8 @@ function LegalEn() {
 
                 <p>
                     For any matter related to this Privacy Notice, the Data Subject may contact
-                    <strong>hola@touramex.com</strong> or visit the address at
-                    <strong>
+{' '}<strong>hola@touramex.com</strong>{' '}or visit the address at
+{' '}<strong>
                         Avenida Insurgentes Sur No. 730, Floor 1, Office 234, Colonia del Valle
                         Centro, Benito Juárez Borough, ZIP Code 03100, Mexico City
                     </strong>.

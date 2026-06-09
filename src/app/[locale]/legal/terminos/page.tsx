@@ -27,26 +27,24 @@ function LegalEs() {
                 <h1>Términos y Condiciones</h1>
 
                 <p>
-                    El presente documento establece los términos bajo los cuales
-                    <strong>HABITA TRAVEL S.A. DE C.V.</strong> (en adelante,
-                    “<strong>TOUR A MEX</strong>”), presta sus servicios turísticos en México
-                    bajo la marca comercial <strong>TOUR A MEX</strong>.
+                    El presente documento establece los términos bajo los cuales{' '}<strong>HABITA TRAVEL S.A. DE C.V.</strong>{' '}(en adelante,
+                     “<strong>TOURAMEX</strong>”), presta sus servicios turísticos en México
+                    bajo la marca comercial{' '}<strong>TOURAMEX</strong>.
                 </p>
 
                 <p>
-                    <strong>TOUR A MEX</strong> se encuentra legalmente constituida en México y
-                    tiene su domicilio en
-                    <strong>
+{' '}<strong>TOURAMEX</strong>{' '}se encuentra legalmente constituida en México y
+                    tiene su domicilio en{' '}<strong>
                         Avenida Insurgentes Sur N°730, Piso 1, Oficina 234, Colonia del Valle
                         Centro, Alcaldía Benito Juárez, C.P. 03100, Ciudad de México
                     </strong>,
                     siendo su correo oficial de contacto
-                    <strong>hola@touramex.com</strong>.
+{' '}<strong>hola@touramex.com</strong>.
                 </p>
 
                 <p>
                     A través de este portal y de sus canales de comunicación autorizados,
-                    <strong>TOUR A MEX</strong> facilita al viajero un catálogo de experiencias,
+{' '}<strong>TOURAMEX</strong>{' '}facilita al viajero un catálogo de experiencias,
                     tours, excursiones y actividades diseñadas para acercar al público nacional
                     e internacional a la riqueza cultural, histórica, gastronómica y natural de
                     nuestro país.
@@ -55,7 +53,7 @@ function LegalEs() {
                 <h2>Condiciones generales de uso del sitio web</h2>
 
                 <p>
-                    El acceso al sitio web de <strong>TOUR A MEX</strong> implica que el usuario
+                    El acceso al sitio web de{' '}<strong>TOURAMEX</strong>{' '}implica que el usuario
                     acepta utilizarlo única y exclusivamente para fines lícitos relacionados con
                     la planeación y reservación de experiencias turísticas.
                 </p>
@@ -67,7 +65,7 @@ function LegalEs() {
                 </p>
 
                 <p>
-                    <strong>TOUR A MEX</strong> podrá, en cualquier momento, suspender el acceso
+{' '}<strong>TOURAMEX</strong>{' '}podrá, en cualquier momento, suspender el acceso
                     a usuarios que incumplan estas condiciones, así como cancelar reservaciones
                     que se hayan realizado mediante prácticas indebidas, sin responsabilidad
                     alguna más allá de la devolución de los montos legítimamente pagados en los
@@ -77,8 +75,7 @@ function LegalEs() {
                 <h2>Servicios turísticos ofrecidos</h2>
 
                 <p>
-                    <strong>TOUR A MEX</strong> ofrece un amplio portafolio de
-                    <strong>
+{' '}<strong>TOURAMEX</strong>{' '}ofrece un amplio portafolio de{' '}<strong>
                         tours, excursiones, experiencias gastronómicas y actividades culturales y
                         de aventura
                     </strong>,
@@ -92,7 +89,7 @@ function LegalEs() {
 
                 <ol>
                     <li>
-                        <strong>
+{' '}<strong>
                             Excursiones guiadas en distintas ciudades y regiones de México
                         </strong>,
                         que incluyen visitas a zonas arqueológicas, recorridos por pueblos
@@ -102,7 +99,7 @@ function LegalEs() {
                     </li>
 
                     <li>
-                        <strong>Experiencias en destinos de playa y naturaleza</strong>,
+{' '}<strong>Experiencias en destinos de playa y naturaleza</strong>,
                         tales como paseos en catamarán, snorkel en arrecifes protegidos,
                         avistamiento de fauna marina (delfines, tortugas, ballenas), visitas a
                         parques eco-arqueológicos, caminatas por reservas naturales y recorridos
@@ -112,8 +109,8 @@ function LegalEs() {
                     </li>
 
                     <li>
-                        <strong>Tours gastronómicos y culturales</strong>
-                        que buscan acercar al viajero a la esencia de la cocina mexicana y a sus
+{' '}<strong>Tours gastronómicos y culturales</strong>
+{' '}                        que buscan acercar al viajero a la esencia de la cocina mexicana y a sus
                         tradiciones vivas. Estos recorridos incluyen degustaciones en mercados
                         tradicionales, visitas a talleres artesanales (alebrijes, barro negro,
                         textiles), experiencias de cocina local, catas de bebidas emblemáticas
@@ -122,7 +119,7 @@ function LegalEs() {
                     </li>
 
                     <li>
-                        <strong>Actividades de aventura y recreación</strong>,
+{' '}<strong>Actividades de aventura y recreación</strong>,
                         como paseos en globo aerostático sobre Teotihuacán, caminatas por montañas
                         y cascadas, recorridos en camello en Los Cabos, senderismo por playas
                         escondidas en el Pacífico, paseos en barco transparente, liberación de
@@ -147,13 +144,13 @@ function LegalEs() {
 
                 <p>
                     Las reservaciones podrán realizarse directamente a través del Sitio Web
-                    <strong>TOUR A MEX</strong>, mediante los formularios en línea y las
+{' '}<strong>TOURAMEX</strong>, mediante los formularios en línea y las
                     pasarelas de pago autorizadas.
                 </p>
 
                 <p>
                     Una vez que el cliente elija la experiencia de su interés, complete sus
-                    datos y efectúe el pago, <strong>TOUR A MEX</strong> verificará
+                    datos y efectúe el pago,{' '}<strong>TOURAMEX</strong>{' '}verificará
                     disponibilidad con sus proveedores locales y, en caso de confirmarse,
                     enviará al cliente un comprobante electrónico que servirá como constancia
                     oficial de su reservación.
@@ -161,7 +158,7 @@ function LegalEs() {
 
                 <p>
                     Dicho comprobante deberá presentarse el día de la actividad. En casos donde
-                    no se pueda confirmar disponibilidad, <strong>TOUR A MEX</strong> notificará
+                    no se pueda confirmar disponibilidad,{' '}<strong>TOURAMEX</strong>{' '}notificará
                     al cliente y ofrecerá alternativas de fechas, actividades similares o la
                     devolución del monto pagado.
                 </p>
@@ -177,7 +174,7 @@ function LegalEs() {
                 <p>
                     Los precios están sujetos a cambios sin previo aviso debido a variaciones en
                     costos de operación, tarifas de acceso a recintos, impuestos locales u otros
-                    factores ajenos al control de <strong>TOUR A MEX</strong>.
+                    factores ajenos al control de{' '}<strong>TOURAMEX</strong>.
                 </p>
 
                 <p>
@@ -189,8 +186,8 @@ function LegalEs() {
 
                 <p>
                     El pago de las experiencias podrá realizarse mediante
-                    <strong>tarjetas bancarias de crédito o débito</strong>
-                    (Visa, Mastercard u otras autorizadas) y a través de pasarelas de pago
+{' '}<strong>tarjetas bancarias de crédito o débito</strong>
+{' '}                    (Visa, Mastercard u otras autorizadas) y a través de pasarelas de pago
                     seguras.
                 </p>
 
@@ -201,14 +198,14 @@ function LegalEs() {
 
                 <p>
                     En caso de que la transacción sea rechazada,
-                    <strong>TOUR A MEX</strong> no garantiza que el servicio seleccionado
+{' '}<strong>TOURAMEX</strong>{' '}no garantiza que el servicio seleccionado
                     mantenga disponibilidad para una nueva fecha.
                 </p>
 
                 <p>
                     El cliente reconoce que el incumplimiento en el pago implica la cancelación
                     automática de la reservación sin responsabilidad para
-                    <strong>TOUR A MEX</strong>.
+{' '}<strong>TOURAMEX</strong>.
                 </p>
 
                 <h2>Cambios solicitados por el cliente</h2>
@@ -216,7 +213,7 @@ function LegalEs() {
                 <p>
                     Si el cliente desea modificar la fecha de su reservación, cambiar el nombre
                     de los participantes o realizar cualquier otro ajuste, deberá solicitarlo
-                    con al menos <strong>48 horas de anticipación</strong> a la realización del
+                    con al menos{' '}<strong>48 horas de anticipación</strong>{' '}a la realización del
                     tour.
                 </p>
 
@@ -241,22 +238,22 @@ function LegalEs() {
                 <ul>
                     <li>
                         Cancelaciones realizadas con
-                        <strong>72 horas o más de anticipación</strong>
-                        a la fecha del servicio podrán generar un reembolso parcial,
+{' '}<strong>72 horas o más de anticipación</strong>
+{' '}                        a la fecha del servicio podrán generar un reembolso parcial,
                         descontando gastos administrativos y comisiones bancarias.
                     </li>
 
                     <li>
                         Cancelaciones con
-                        <strong>menos de 72 horas de anticipación</strong>
-                        no serán reembolsables, salvo que la suspensión del servicio sea imputable
-                        a <strong>TOUR A MEX</strong> o al proveedor local.
+{' '}<strong>menos de 72 horas de anticipación</strong>
+{' '}                        no serán reembolsables, salvo que la suspensión del servicio sea imputable
+                        a{' '}<strong>TOURAMEX</strong>{' '}o al proveedor local.
                     </li>
 
                     <li>
                         Si la cancelación es consecuencia de causas de fuerza mayor (ejemplo:
                         desastres naturales, cierre de recintos, decisiones de autoridad),
-                        <strong>TOUR A MEX</strong> podrá ofrecer alternativas de reprogramación o
+{' '}<strong>TOURAMEX</strong>{' '}podrá ofrecer alternativas de reprogramación o
                         un reembolso parcial según corresponda.
                     </li>
                 </ul>
@@ -285,13 +282,13 @@ function LegalEs() {
 
                 <p>
                     Cualquier omisión en estas obligaciones libera a
-                    <strong>TOUR A MEX</strong> de responsabilidad sobre la experiencia.
+{' '}<strong>TOURAMEX</strong>{' '}de responsabilidad sobre la experiencia.
                 </p>
 
-                <h2>Responsabilidad limitada de TOUR A MEX</h2>
+                <h2>Responsabilidad limitada de TOURAMEX</h2>
 
                 <p>
-                    <strong>TOUR A MEX</strong> actúa como intermediario entre el cliente y los
+{' '}<strong>TOURAMEX</strong>{' '}actúa como intermediario entre el cliente y los
                     proveedores locales (transportistas, guías, recintos, restaurantes,
                     operadores de actividades), por lo que no será responsable por
                     eventualidades fuera de su control, tales como retrasos ocasionados por
@@ -300,7 +297,7 @@ function LegalEs() {
                 </p>
 
                 <p>
-                    En ningún caso la responsabilidad de <strong>TOUR A MEX</strong> excederá el
+                    En ningún caso la responsabilidad de{' '}<strong>TOURAMEX</strong>{' '}excederá el
                     monto efectivamente pagado por el cliente por la experiencia contratada.
                 </p>
 
@@ -308,12 +305,12 @@ function LegalEs() {
 
                 <p>
                     La información personal que el cliente proporcione será tratada de manera
-                    confidencial y conforme al <strong>Aviso de Privacidad</strong> disponible en
+                    confidencial y conforme al{' '}<strong>Aviso de Privacidad</strong>{' '}disponible en
                     el Sitio Web.
                 </p>
 
                 <p>
-                    <strong>TOUR A MEX</strong> adopta medidas administrativas, técnicas y
+{' '}<strong>TOURAMEX</strong>{' '}adopta medidas administrativas, técnicas y
                     físicas razonables para proteger los datos personales, comprometiéndose a no
                     divulgarlos a terceros salvo en los casos permitidos por la ley o
                     autorizados expresamente por el cliente.
@@ -323,12 +320,12 @@ function LegalEs() {
 
                 <p>
                     Los presentes Términos y Condiciones se regirán e interpretarán bajo las
-                    leyes de los <strong>Estados Unidos Mexicanos</strong>.
+                    leyes de los{' '}<strong>Estados Unidos Mexicanos</strong>.
                 </p>
 
                 <p>
                     Para la solución de controversias, las partes se someten a los tribunales
-                    competentes de la <strong>Ciudad de México</strong>, renunciando a cualquier
+                    competentes de la{' '}<strong>Ciudad de México</strong>, renunciando a cualquier
                     otro fuero que pudiera corresponderles en razón de su domicilio presente o
                     futuro.
                 </p>
@@ -360,25 +357,25 @@ function LegalEn() {
 
                 <p>
                     This document establishes the terms under which
-                    <strong>HABITA TRAVEL S.A. DE C.V.</strong> (hereinafter,
-                    “<strong>TOUR A MEX</strong>”), provides its tourism services in Mexico
-                    under the commercial brand <strong>TOUR A MEX</strong>.
+{' '}<strong>HABITA TRAVEL S.A. DE C.V.</strong>{' '}(hereinafter,
+                    “<strong>TOURAMEX</strong>”), provides its tourism services in Mexico
+                    under the commercial brand{' '}<strong>TOURAMEX</strong>.
                 </p>
 
                 <p>
-                    <strong>TOUR A MEX</strong> is legally incorporated in Mexico and has its
+{' '}<strong>TOURAMEX</strong>{' '}is legally incorporated in Mexico and has its
                     registered address at
-                    <strong>
+{' '}<strong>
                         Avenida Insurgentes Sur No. 730, Floor 1, Office 234, Colonia del Valle
                         Centro, Benito Juárez Borough, ZIP Code 03100, Mexico City
                     </strong>,
                     with the official contact email address
-                    <strong>hola@touramex.com</strong>.
+{' '}<strong>hola@touramex.com</strong>.
                 </p>
 
                 <p>
                     Through this website and its authorized communication channels,
-                    <strong>TOUR A MEX</strong> provides travelers with a catalog of
+{' '}<strong>TOURAMEX</strong>{' '}provides travelers with a catalog of
                     experiences, tours, excursions, and activities designed to bring both
                     national and international visitors closer to the cultural, historical,
                     gastronomic, and natural richness of Mexico.
@@ -387,7 +384,7 @@ function LegalEn() {
                 <h2>General Conditions for Website Use</h2>
 
                 <p>
-                    Access to the <strong>TOUR A MEX</strong> website implies that the user
+                    Access to the{' '}<strong>TOURAMEX</strong>{' '}website implies that the user
                     agrees to use it solely for lawful purposes related to the planning and
                     booking of tourism experiences.
                 </p>
@@ -399,7 +396,7 @@ function LegalEn() {
                 </p>
 
                 <p>
-                    <strong>TOUR A MEX</strong> may, at any time, suspend access for users who
+{' '}<strong>TOURAMEX</strong>{' '}may, at any time, suspend access for users who
                     violate these conditions, as well as cancel reservations made through
                     improper practices, without any liability beyond refunding the amounts
                     legitimately paid when applicable.
@@ -408,8 +405,8 @@ function LegalEn() {
                 <h2>Tourism Services Offered</h2>
 
                 <p>
-                    <strong>TOUR A MEX</strong> offers a wide portfolio of
-                    <strong>
+{' '}<strong>TOURAMEX</strong>{' '}offers a wide portfolio of
+{' '}<strong>
                         tours, excursions, gastronomic experiences, and cultural and adventure
                         activities
                     </strong>,
@@ -422,7 +419,7 @@ function LegalEn() {
 
                 <ol>
                     <li>
-                        <strong>
+{' '}<strong>
                             Guided excursions in different cities and regions of Mexico
                         </strong>,
                         including visits to archaeological sites, tours through magical towns,
@@ -432,7 +429,7 @@ function LegalEn() {
                     </li>
 
                     <li>
-                        <strong>Beach and nature experiences</strong>,
+{' '}<strong>Beach and nature experiences</strong>,
                         such as catamaran rides, snorkeling in protected reefs, marine wildlife
                         watching (dolphins, turtles, whales), visits to eco-archaeological parks,
                         hikes through natural reserves, and tours in highly biodiverse areas, all
@@ -441,8 +438,8 @@ function LegalEn() {
                     </li>
 
                     <li>
-                        <strong>Gastronomic and cultural tours</strong>
-                        aimed at bringing travelers closer to the essence of Mexican cuisine and
+{' '}<strong>Gastronomic and cultural tours</strong>
+{' '}                        aimed at bringing travelers closer to the essence of Mexican cuisine and
                         its living traditions. These tours include tastings in traditional
                         markets, visits to artisan workshops (alebrijes, black clay pottery,
                         textiles), local cooking experiences, tastings of iconic beverages such
@@ -451,7 +448,7 @@ function LegalEn() {
                     </li>
 
                     <li>
-                        <strong>Adventure and recreational activities</strong>,
+{' '}<strong>Adventure and recreational activities</strong>,
                         such as hot air balloon rides over Teotihuacán, hikes through mountains
                         and waterfalls, camel rides in Los Cabos, hiking on hidden Pacific
                         beaches, transparent boat rides, sea turtle release activities, and other
@@ -476,20 +473,20 @@ function LegalEn() {
 
                 <p>
                     Reservations may be made directly through the
-                    <strong>TOUR A MEX</strong> website using online forms and authorized
+{' '}<strong>TOURAMEX</strong>{' '}website using online forms and authorized
                     payment gateways.
                 </p>
 
                 <p>
                     Once the customer selects the desired experience, completes their details,
-                    and makes the payment, <strong>TOUR A MEX</strong> will verify availability
+                    and makes the payment,{' '}<strong>TOURAMEX</strong>{' '}will verify availability
                     with its local providers and, if confirmed, will send the customer an
                     electronic voucher serving as official proof of reservation.
                 </p>
 
                 <p>
                     Such voucher must be presented on the day of the activity. In cases where
-                    availability cannot be confirmed, <strong>TOUR A MEX</strong> will notify
+                    availability cannot be confirmed,{' '}<strong>TOURAMEX</strong>{' '}will notify
                     the customer and offer alternative dates, similar activities, or a refund
                     of the amount paid.
                 </p>
@@ -505,7 +502,7 @@ function LegalEn() {
                 <p>
                     Prices are subject to change without prior notice due to variations in
                     operating costs, entrance fees, local taxes, or other factors beyond the
-                    control of <strong>TOUR A MEX</strong>.
+                    control of{' '}<strong>TOURAMEX</strong>.
                 </p>
 
                 <p>
@@ -516,8 +513,8 @@ function LegalEn() {
 
                 <p>
                     Payment for experiences may be made using
-                    <strong>credit or debit cards</strong>
-                    (Visa, Mastercard, or other authorized cards) through secure payment
+{' '}<strong>credit or debit cards</strong>
+{' '}                    (Visa, Mastercard, or other authorized cards) through secure payment
                     gateways.
                 </p>
 
@@ -527,14 +524,14 @@ function LegalEn() {
                 </p>
 
                 <p>
-                    If the transaction is declined, <strong>TOUR A MEX</strong> does not
+                    If the transaction is declined,{' '}<strong>TOURAMEX</strong>{' '}does not
                     guarantee that the selected service will remain available for a new date.
                 </p>
 
                 <p>
                     The customer acknowledges that failure to complete payment results in the
                     automatic cancellation of the reservation without liability for
-                    <strong>TOUR A MEX</strong>.
+{' '}<strong>TOURAMEX</strong>.
                 </p>
 
                 <h2>Changes Requested by the Customer</h2>
@@ -542,7 +539,7 @@ function LegalEn() {
                 <p>
                     If the customer wishes to modify the reservation date, change participant
                     names, or make any other adjustment, they must request it at least
-                    <strong>48 hours in advance</strong> of the scheduled tour.
+{' '}<strong>48 hours in advance</strong>{' '}of the scheduled tour.
                 </p>
 
                 <p>
@@ -566,22 +563,22 @@ function LegalEn() {
                 <ul>
                     <li>
                         Cancellations made
-                        <strong>72 hours or more in advance</strong>
-                        of the service date may qualify for a partial refund, minus
+{' '}<strong>72 hours or more in advance</strong>
+{' '}                        of the service date may qualify for a partial refund, minus
                         administrative fees and banking commissions.
                     </li>
 
                     <li>
                         Cancellations made with
-                        <strong>less than 72 hours’ notice</strong>
-                        are non-refundable unless the suspension of the service is attributable
-                        to <strong>TOUR A MEX</strong> or the local provider.
+{' '}<strong>less than 72 hours’ notice</strong>
+{' '}                        are non-refundable unless the suspension of the service is attributable
+                        to{' '}<strong>TOURAMEX</strong>{' '}or the local provider.
                     </li>
 
                     <li>
                         If the cancellation results from force majeure events (for example:
                         natural disasters, venue closures, or government decisions),
-                        <strong>TOUR A MEX</strong> may offer rescheduling alternatives or a
+{' '}<strong>TOURAMEX</strong>{' '}may offer rescheduling alternatives or a
                         partial refund as applicable.
                     </li>
                 </ul>
@@ -610,13 +607,13 @@ function LegalEn() {
 
                 <p>
                     Any failure to comply with these obligations releases
-                    <strong>TOUR A MEX</strong> from liability regarding the experience.
+{' '}<strong>TOURAMEX</strong>{' '}from liability regarding the experience.
                 </p>
 
-                <h2>Limited Liability of TOUR A MEX</h2>
+                <h2>Limited Liability of TOURAMEX</h2>
 
                 <p>
-                    <strong>TOUR A MEX</strong> acts as an intermediary between the customer and
+{' '}<strong>TOURAMEX</strong>{' '}acts as an intermediary between the customer and
                     local providers (transportation companies, guides, venues, restaurants, and
                     activity operators) and therefore shall not be liable for events beyond its
                     control, such as delays caused by traffic, adverse weather conditions,
@@ -625,7 +622,7 @@ function LegalEn() {
                 </p>
 
                 <p>
-                    In no event shall the liability of <strong>TOUR A MEX</strong> exceed the
+                    In no event shall the liability of{' '}<strong>TOURAMEX</strong>{' '}exceed the
                     amount actually paid by the customer for the contracted experience.
                 </p>
 
@@ -634,11 +631,11 @@ function LegalEn() {
                 <p>
                     The personal information provided by the customer will be treated
                     confidentially and in accordance with the
-                    <strong>Privacy Notice</strong> available on the Website.
+{' '}<strong>Privacy Notice</strong>{' '}available on the Website.
                 </p>
 
                 <p>
-                    <strong>TOUR A MEX</strong> adopts reasonable administrative, technical, and
+{' '}<strong>TOURAMEX</strong>{' '}adopts reasonable administrative, technical, and
                     physical measures to protect personal data and undertakes not to disclose
                     such data to third parties except in cases permitted by law or expressly
                     authorized by the customer.
@@ -649,12 +646,12 @@ function LegalEn() {
                 <p>
                     These Terms and Conditions shall be governed by and interpreted in
                     accordance with the laws of the
-                    <strong>United Mexican States</strong>.
+{' '}<strong>United Mexican States</strong>.
                 </p>
 
                 <p>
                     For the resolution of disputes, the parties submit to the competent courts
-                    of <strong>Mexico City</strong>, waiving any other jurisdiction that may
+                    of{' '}<strong>Mexico City</strong>, waiving any other jurisdiction that may
                     correspond to them by reason of their present or future domicile.
                 </p>
             </section>

@@ -56,6 +56,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
     font-family: 'Albert Sans', sans-serif;
@@ -66,18 +67,23 @@
   .font-script {
     font-family: 'Covered By Your Grace', cursive;
   }
+
   .text-teal {
     color: var(--teal);
   }
+
   .bg-teal {
     background-color: var(--teal);
   }
+
   .text-orange-custom {
     color: var(--orange);
   }
+
   .bg-orange-custom {
     background-color: var(--orange);
   }
+
   .hover\:bg-orange-hover:hover {
     background-color: var(--orange-hover);
   }
@@ -90,9 +96,12 @@ html {
 
 /* Custom animations */
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -103,6 +112,7 @@ html {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -202,8 +212,8 @@ html {
   @apply pl-1 leading-7;
 }
 
-.markdown li > ul,
-.markdown li > ol {
+.markdown li>ul,
+.markdown li>ol {
   @apply mt-3;
 }
 
@@ -259,10 +269,16 @@ html {
 
 /* SPACING */
 
-.markdown > *:first-child {
+.markdown>*:first-child {
   @apply mt-0;
 }
 
-.markdown > *:last-child {
+.markdown>*:last-child {
   @apply mb-0;
+}
+
+strong {
+  display: inline;
+  white-space: normal;
+
 }

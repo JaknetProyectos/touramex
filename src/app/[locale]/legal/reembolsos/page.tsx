@@ -29,9 +29,9 @@ function LegalEs() {
 
                 <p>
                     La presente política establece las condiciones bajo las cuales los clientes
-                    de <strong>HABITA TRAVEL S.A. DE C.V.</strong> (en adelante,
-                    “<strong>TOUR A MEX</strong>”), con domicilio en
-                    <strong>
+                    de{' '}<strong>HABITA TRAVEL S.A. DE C.V.</strong>{' '}(en adelante,
+                    “<strong>TOURAMEX</strong>”), con domicilio en
+{' '}<strong>
                         Avenida Insurgentes Sur N°730, Piso 1, Oficina 234, Colonia del Valle
                         Centro, Alcaldía Benito Juárez, C.P. 03100, Ciudad de México
                     </strong>,
@@ -42,16 +42,16 @@ function LegalEs() {
                 <p>
                     Esta política aplica a todos los tours, excursiones, experiencias
                     gastronómicas y actividades culturales reservadas a través del sitio web
-                    <strong>TOUR A MEX</strong>, del correo
-                    <strong>hola@touramex.com</strong> o mediante acuerdos directos con
-                    <strong>TOUR A MEX</strong>.
+{' '}<strong>TOURAMEX</strong>, del correo
+{' '}<strong>hola@touramex.com</strong>{' '}o mediante acuerdos directos con
+{' '}<strong>TOURAMEX</strong>.
                 </p>
 
                 <h2>Naturaleza de los servicios turísticos</h2>
 
                 <p>
                     El cliente reconoce que los servicios ofrecidos por
-                    <strong>TOUR A MEX</strong> implican la coordinación con múltiples
+{' '}<strong>TOURAMEX</strong>{' '}implican la coordinación con múltiples
                     proveedores locales, incluyendo guías certificados, transportistas,
                     recintos turísticos, restaurantes y operadores de actividades.
                 </p>
@@ -66,38 +66,38 @@ function LegalEs() {
                     Por ello, los reembolsos no son automáticos y estarán sujetos a los
                     términos de esta política, procurando siempre un equilibrio justo entre los
                     intereses del viajero y los compromisos de
-                    <strong>TOUR A MEX</strong> con sus proveedores.
+{' '}<strong>TOURAMEX</strong>{' '}con sus proveedores.
                 </p>
 
                 <h2>Cancelación por parte del cliente</h2>
 
                 <ol>
                     <li>
-                        <strong>Con al menos 72 horas de anticipación:</strong>
-                        el cliente podrá solicitar la cancelación de su reservación, procediendo
+{' '}<strong>Con al menos 72 horas de anticipación:</strong>
+{' '}                        el cliente podrá solicitar la cancelación de su reservación, procediendo
                         un reembolso parcial del monto pagado, deduciendo los gastos
                         administrativos, comisiones bancarias y cualquier penalización impuesta
                         por el proveedor local.
                     </li>
 
                     <li>
-                        <strong>Con menos de 72 horas de anticipación:</strong>
-                        no habrá reembolso, salvo que se trate de casos excepcionales debidamente
+{' '}<strong>Con menos de 72 horas de anticipación:</strong>
+{' '}                        no habrá reembolso, salvo que se trate de casos excepcionales debidamente
                         justificados (enfermedad grave, imprevistos mayores), mismos que serán
-                        analizados individualmente por <strong>TOUR A MEX</strong>.
+                        analizados individualmente por{' '}<strong>TOURAMEX</strong>.
                     </li>
 
                     <li>
-                        <strong>No presentación el día del servicio (no show):</strong>
-                        en caso de que el cliente no se presente en el punto y hora acordados sin
+{' '}<strong>No presentación el día del servicio (no show):</strong>
+{' '}                        en caso de que el cliente no se presente en el punto y hora acordados sin
                         previo aviso, no habrá lugar a reembolso alguno.
                     </li>
                 </ol>
 
-                <h2>Cancelación por parte de TOUR A MEX o proveedores</h2>
+                <h2>Cancelación por parte de TOURAMEX o proveedores</h2>
 
                 <p>
-                    <strong>TOUR A MEX</strong> se reserva el derecho de cancelar o reprogramar
+{' '}<strong>TOURAMEX</strong>{' '}se reserva el derecho de cancelar o reprogramar
                     un tour en los siguientes casos:
                 </p>
 
@@ -134,7 +134,7 @@ function LegalEs() {
 
                 <p>
                     El cliente deberá enviar un correo electrónico a
-                    <strong>hola@touramex.com</strong> con el asunto
+{' '}<strong>hola@touramex.com</strong>{' '}con el asunto
                     “Solicitud de Cancelación/Reembolso”, incluyendo:
                 </p>
 
@@ -145,8 +145,8 @@ function LegalEs() {
                 </ul>
 
                 <p>
-                    <strong>TOUR A MEX</strong> acusará recibo de la solicitud y dará respuesta
-                    en un plazo máximo de <strong>10 días hábiles</strong>, confirmando si
+{' '}<strong>TOURAMEX</strong>{' '}acusará recibo de la solicitud y dará respuesta
+                    en un plazo máximo de{' '}<strong>10 días hábiles</strong>, confirmando si
                     procede o no el reembolso.
                 </p>
 
@@ -156,21 +156,21 @@ function LegalEs() {
 
                 <ul>
                     <li>
-                        <strong>Devolución a la misma tarjeta bancaria</strong>
+{' '}<strong>Devolución a la misma tarjeta bancaria</strong>{' '}
                         (crédito o débito) con la que se realizó la compra, sujeto a los tiempos
                         de procesamiento de la institución emisora, los cuales pueden variar de 5
                         a 30 días hábiles.
                     </li>
 
                     <li>
-                        <strong>Transferencia bancaria</strong>
+{' '}<strong>Transferencia bancaria</strong>{' '}
                         a nombre del cliente titular de la reservación, siempre que este
                         proporcione la cuenta correspondiente.
                     </li>
                 </ul>
 
                 <p>
-                    <strong>TOUR A MEX</strong> no será responsable por retrasos ocasionados
+{' '}<strong>TOURAMEX</strong>{' '}no será responsable por retrasos ocasionados
                     por bancos, pasarelas de pago u otros intermediarios financieros.
                 </p>
 
@@ -205,9 +205,9 @@ function LegalEs() {
                 <p>
                     Para dudas, aclaraciones o solicitudes relacionadas con esta política, el
                     cliente podrá escribir al correo
-                    <strong>hola@touramex.com</strong> o acudir directamente al domicilio de
-                    TOUR A MEX en
-                    <strong>
+{' '}<strong>hola@touramex.com</strong>{' '}o acudir directamente al domicilio de
+                    TOURAMEX en
+{' '}<strong>
                         Avenida Insurgentes Sur N°730, Piso 1, Oficina 234, Colonia del Valle
                         Centro, Alcaldía Benito Juárez, C.P. 03100, Ciudad de México
                     </strong>.
@@ -243,9 +243,9 @@ function LegalEn() {
 
                 <p>
                     This policy establishes the conditions under which clients of
-                    <strong>HABITA TRAVEL S.A. DE C.V.</strong> (hereinafter,
-                    “<strong>TOUR A MEX</strong>”), with registered address at
-                    <strong>
+{' '}<strong>HABITA TRAVEL S.A. DE C.V.</strong>{' '}(hereinafter,
+                    “<strong>TOURAMEX</strong>”), with registered address at
+{' '}<strong>
                         Avenida Insurgentes Sur No. 730, Floor 1, Office 234, Colonia del Valle
                         Centro, Benito Juárez Borough, ZIP Code 03100, Mexico City
                     </strong>,
@@ -256,16 +256,16 @@ function LegalEn() {
                 <p>
                     This policy applies to all tours, excursions, gastronomic experiences, and
                     cultural activities booked through the
-                    <strong>TOUR A MEX</strong> website, via email at
-                    <strong>hola@touramex.com</strong>, or through direct agreements with
-                    <strong>TOUR A MEX</strong>.
+{' '}<strong>TOURAMEX</strong>{' '}website, via email at
+{' '}<strong>hola@touramex.com</strong>, or through direct agreements with
+{' '}<strong>TOURAMEX</strong>.
                 </p>
 
                 <h2>Nature of Tourism Services</h2>
 
                 <p>
                     The customer acknowledges that the services offered by
-                    <strong>TOUR A MEX</strong> involve coordination with multiple local
+{' '}<strong>TOURAMEX</strong>{' '}involve coordination with multiple local
                     providers, including certified guides, transportation companies, tourist
                     venues, restaurants, and activity operators.
                 </p>
@@ -279,7 +279,7 @@ function LegalEn() {
                 <p>
                     Therefore, refunds are not automatic and will be subject to the terms of
                     this policy, always seeking a fair balance between the interests of the
-                    traveler and the commitments of <strong>TOUR A MEX</strong> with its
+                    traveler and the commitments of{' '}<strong>TOURAMEX</strong>{' '}with its
                     providers.
                 </p>
 
@@ -287,31 +287,31 @@ function LegalEn() {
 
                 <ol>
                     <li>
-                        <strong>At least 72 hours in advance:</strong>
-                        the customer may request the cancellation of their reservation, in which
+{' '}<strong>At least 72 hours in advance:</strong>
+{' '}                        the customer may request the cancellation of their reservation, in which
                         case a partial refund of the amount paid may apply, deducting
                         administrative costs, banking commissions, and any penalties imposed by
                         the local provider.
                     </li>
 
                     <li>
-                        <strong>Less than 72 hours in advance:</strong>
-                        no refund will apply, except in duly justified exceptional cases (serious
+{' '}<strong>Less than 72 hours in advance:</strong>
+{' '}                        no refund will apply, except in duly justified exceptional cases (serious
                         illness, major unforeseen events), which will be individually reviewed by
-                        <strong>TOUR A MEX</strong>.
+{' '}<strong>TOURAMEX</strong>.
                     </li>
 
                     <li>
-                        <strong>No-show on the day of the service:</strong>
-                        if the customer fails to appear at the agreed meeting point and time
+{' '}<strong>No-show on the day of the service:</strong>
+{' '}                        if the customer fails to appear at the agreed meeting point and time
                         without prior notice, no refund will be granted.
                     </li>
                 </ol>
 
-                <h2>Cancellation by TOUR A MEX or Providers</h2>
+                <h2>Cancellation by TOURAMEX or Providers</h2>
 
                 <p>
-                    <strong>TOUR A MEX</strong> reserves the right to cancel or reschedule a
+{' '}<strong>TOURAMEX</strong>{' '}reserves the right to cancel or reschedule a
                     tour in the following cases:
                 </p>
 
@@ -347,7 +347,7 @@ function LegalEn() {
 
                 <p>
                     The customer must send an email to
-                    <strong>hola@touramex.com</strong> with the subject line
+{' '}<strong>hola@touramex.com</strong>{' '}with the subject line
                     “Cancellation/Refund Request”, including:
                 </p>
 
@@ -358,9 +358,9 @@ function LegalEn() {
                 </ul>
 
                 <p>
-                    <strong>TOUR A MEX</strong> will acknowledge receipt of the request and
+{' '}<strong>TOURAMEX</strong>{' '}will acknowledge receipt of the request and
                     respond within a maximum period of
-                    <strong>10 business days</strong>, confirming whether or not the refund
+{' '}<strong>10 business days</strong>, confirming whether or not the refund
                     applies.
                 </p>
 
@@ -370,21 +370,21 @@ function LegalEn() {
 
                 <ul>
                     <li>
-                        <strong>Refund to the same bank card</strong>
-                        (credit or debit) used for the purchase, subject to the issuing
+{' '}<strong>Refund to the same bank card</strong>
+{' '}                        (credit or debit) used for the purchase, subject to the issuing
                         institution’s processing times, which may vary from 5 to 30 business
                         days.
                     </li>
 
                     <li>
-                        <strong>Bank transfer</strong>
-                        in the name of the customer who made the reservation, provided that the
+{' '}<strong>Bank transfer</strong>
+{' '}                        in the name of the customer who made the reservation, provided that the
                         corresponding account information is supplied.
                     </li>
                 </ul>
 
                 <p>
-                    <strong>TOUR A MEX</strong> shall not be responsible for delays caused by
+{' '}<strong>TOURAMEX</strong>{' '}shall not be responsible for delays caused by
                     banks, payment gateways, or other financial intermediaries.
                 </p>
 
@@ -419,8 +419,8 @@ function LegalEn() {
                 <p>
                     For questions, clarifications, or requests related to this policy, the
                     customer may contact
-                    <strong>hola@touramex.com</strong> or visit TOUR A MEX directly at
-                    <strong>
+{' '}<strong>hola@touramex.com</strong>{' '}or visit TOURAMEX directly at
+{' '}<strong>
                         Avenida Insurgentes Sur No. 730, Floor 1, Office 234, Colonia del Valle
                         Centro, Benito Juárez Borough, ZIP Code 03100, Mexico City
                     </strong>.
