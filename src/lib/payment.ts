@@ -108,7 +108,7 @@ export async function processOctanoPayment(
     });
 
     return {
-      success: true,
+      success: saleResponse.data.status == "APPROVED",
       data: saleResponse.data,
     };
   } catch (error: any) {
