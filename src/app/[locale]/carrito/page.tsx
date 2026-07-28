@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useCart } from "@/context/CartContext";
 import { useAlert } from "@/context/AlertContext";
-import { processOctanoPayment } from "@/lib/payment";
+import { processEtominPayment } from "@/lib/payment";
 import { formatPrice } from "@/lib/price";
 
 import {
@@ -277,7 +277,7 @@ export default function CartPage() {
     try {
       const orderId = buildOrderId();
 
-      const paymentResult = await processOctanoPayment({
+      const paymentResult = await processEtominPayment({
         amount,
         orderId,
         customer: {
@@ -299,6 +299,8 @@ export default function CartPage() {
           cvv: form.cvv.trim(),
         },
       });
+
+      console.log(paymentResult)
 
       const approved = paymentResult.success;
 
@@ -925,14 +927,14 @@ export default function CartPage() {
                         </label>
                         <input
                           required
-                          minLength={4}
-                          maxLength={4}
-                          pattern="[0-9]{4}"
+                          minLength={2}
+                          maxLength={2}
+                          pattern="[0-9]{2}"
                           value={form.expYear}
                           onChange={(e) =>
                             setForm({
                               ...form,
-                              expYear: e.target.value.replace(/\D/g, "").slice(0, 4),
+                              expYear: e.target.value.replace(/\D/g, "").slice(0, 2),
                             })
                           }
                           className={inputClass}

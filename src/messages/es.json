@@ -149,7 +149,7 @@
         "cardNumber": "1234 5678 9012 3456",
         "cardName": "COMO SE LEE EN LA TARJETA",
         "month": "MM",
-        "year": "AAAA",
+        "year": "AA",
         "cvv": "000"
       },
       "note": "Los datos bancarios se transmiten de manera segura para procesar la transacción vía Etomin.",

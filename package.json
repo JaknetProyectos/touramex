@@ -13,6 +13,7 @@
     "@api/etomin": "file:.api/apis/etomin",
     "@supabase/ssr": "^0.10.3",
     "@supabase/supabase-js": "^2.106.1",
+    "axios": "^1.18.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "i18next": "^26.2.0",

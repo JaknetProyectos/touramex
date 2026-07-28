@@ -149,7 +149,7 @@
         "cardNumber": "1234 5678 9012 3456",
         "cardName": "NAME LASTNAME",
         "month": "MM",
-        "year": "YYYY",
+        "year": "YY",
         "cvv": "123"
       },
       "note": "The data is sent to the server to process the payment with Etomin.",
