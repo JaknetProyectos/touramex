@@ -5,6 +5,7 @@ import axios from 'axios';
 export interface PaymentData {
   amount: number;
   orderId: string;
+  redirectUrl?: string;
 
   cardData: {
     number: string;
@@ -89,6 +90,7 @@ export async function processEtominPayment(payment: PaymentData) {
       amount: Number(payment.amount),
       currency: "484", // MXN
       reference: payment.orderId,
+      redirectUrl: payment.redirectUrl,
 
       customerInformation: {
         firstName: payment.customer.nombre,
@@ -117,12 +119,13 @@ export async function processEtominPayment(payment: PaymentData) {
 
     // Validamos el estatus de forma insensible a mayúsculas/minúsculas ("approved" / "APPROVED")
     const isApproved = data.status?.toUpperCase() === "APPROVED";
-
-    console.log(data)
+    const needsRedirect = data.redirectTo != "";
 
     return {
       success: isApproved,
       orderId: data.orderId,
+      needsRedirect,
+      redirectUrl: data.redirectTo || null,
       reference: data.reference,
       transactionId: data.transactionId,
       status: data.status,

@@ -276,10 +276,12 @@ export default function CartPage() {
 
     try {
       const orderId = buildOrderId();
+      const confirmationRedirectUrl = `${window.location.origin}/confirmacion?reference=${orderId}&state=APPROVED`;
 
       const paymentResult = await processEtominPayment({
         amount,
         orderId,
+        redirectUrl: confirmationRedirectUrl,
         customer: {
           nombre: form.firstName.trim(),
           apellido: form.lastName.trim(),
@@ -300,11 +302,14 @@ export default function CartPage() {
         },
       });
 
-      console.log(paymentResult)
+      // 3. Redirección y autenticación
+      if (paymentResult.needsRedirect && paymentResult.redirectUrl) {
+        window.location.href = paymentResult.redirectUrl;
+        return;
+      }
 
       const approved = paymentResult.success;
 
-      console.log(paymentResult);
 
       if (!approved) {
         throw new Error(t("errors.paymentRejected"));
@@ -371,6 +376,10 @@ export default function CartPage() {
           type: "success",
         });
       }
+
+      const successUrl = `/confirmacion?status=${paymentResult.status}&reference=${paymentResult.reference}&transactionId=${paymentResult.data?.transactionId || paymentResult.orderId}&amount=${amount}`;
+      window.location.href = successUrl;
+
     } catch (err) {
       const message =
         err instanceof Error ? err.message : t("errors.unexpected");

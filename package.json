@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@api/etomin": "file:.api/apis/etomin",
+    "@next/third-parties": "^16.4.0",
     "@supabase/ssr": "^0.10.3",
     "@supabase/supabase-js": "^2.106.1",
     "axios": "^1.18.1",
